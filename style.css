@@ -1,0 +1,50 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* ------FONTS----- */
+@font-face {
+    font-family: "Shentox";
+    src:url("/fonts/Shentox\ Light.ttf");
+}
+
+/* ------MENU------ */
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f8f8;
+    align-items: center;
+    padding: 5px 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0%;
+}
+
+.menu-list {
+    padding-left: 15px;
+    font-size: 14px;
+    font-family: "Shentox", Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.12px;
+    color: #505666;
+}
+
+.menu-logo,
+.menu-list,
+.menu-icon:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
