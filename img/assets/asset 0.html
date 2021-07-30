@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<!--
+Development:
+RONAN O'LEARY, @ro_oleary, ✈Amsterdam, NL
+JULIO FOULQUIÉ, @julioelpoeta, ✈Montevideo, UY
+JULIAN AIJAL, ✈Amsterdam, NL
+OSCAR VAN ZIJVERDEN,✈Amsterdam, NL
+STEPHAN LAGERWAARD, ✈Amsterdam, NL
+SAM BLOK, ✈Amsterdam, NL
+JULIAN SZNAIDER, ✈Buenos Aires, AR
+MARC TORAL, ✈Amsterdam, NL
+LAURYNAS KETURAKIS, ✈Amsterdam, NL
+JELLE VAN WIJHE, ✈Amsterdam, NL
+——————————
+Concept and Design by:
+ALEXANDER GRIFFIOEN, @oscaralexander, ✈Amsterdam, NL
+——————————
+Alumni:
+JAMES SCOTT, PABLO ROMÁN, ✈Amsterdam, NL
+——————————
+-->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1, maximum-scale=1"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta content="telephone=no" name="format-detection"><meta content="unsafe-url" name="referrer"><meta content="The Next Web" name="apple-mobile-web-app-title"><link rel='preload' href='https://next.tnwcdn.com/assets/next/fonts/graphik-regular.woff2' as='font' type='font/woff2' crossorigin='anonymous'><link rel='preload' href='https://next.tnwcdn.com/assets/next/fonts/graphik-regular-italic.woff2' as='font' type='font/woff2' crossorigin='anonymous'><link rel='preload' href='https://next.tnwcdn.com/assets/next/fonts/graphik-medium.woff2' as='font' type='font/woff2' crossorigin='anonymous'><link rel='preload' href='https://next.tnwcdn.com/assets/next/fonts/trump-soft-pro-bold.woff2' as='font' type='font/woff2' crossorigin='anonymous'><link rel='preload' href='https://next.tnwcdn.com/assets/next/fonts/shentox-medium.woff2' as='font' type='font/woff2' crossorigin='anonymous'><link rel='preload' href='https://next.tnwcdn.com/assets/next/fonts/tnw-avalon-bold.woff2' as='font' type='font/woff2' crossorigin='anonymous'><title>TNW | The heart of tech</title><meta name="description" content="We inform, inspire, and connect people who love tech" property="description"/><link rel="apple-touch-icon" sizes="57x57" href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="//next.tnwcdn.com/assets/img/favicon/apple-touch-icon-180x180.png"><link rel="icon" type="image/png" href="//next.tnwcdn.com/assets/img/favicon/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="//next.tnwcdn.com/assets/img/favicon/favicon-194x194.png" sizes="194x194"><link rel="icon" type="image/png" href="//next.tnwcdn.com/assets/img/favicon/favicon-96x96.png" sizes="96x96"><link rel="icon" type="image/png" href="//next.tnwcdn.com/assets/img/favicon/favicon-192x192.png" sizes="192x192"><link rel="icon" type="image/png" href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png" sizes="16x16"><link rel="shortcut icon" href="//next.tnwcdn.com/assets/img/favicon/favicon-16x16.png"><script src="//next.tnwcdn.com/assets/js/lib/modernizr-custom.js?b961b1f9063778cba08629c3096be89b4f5c4fc7" async></script><script src="https://gdpr.privacymanager.io/1/stub.bundle.js" async></script><style>body{visibility:hidden;}</style><script type="text/javascript">
+            window.dataLayer = window.dataLayer || [];
+        </script><script type="text/javascript" async> window.dataLayer = window.dataLayer || []; dataLayer.push({"page":[{"homepage":"3"}]});</script><!-- anti-flicker snippet (recommended)  
+        <style>.async-hide { opacity: 0 !important} </style><script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+        h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document.documentElement,'async-hide','dataLayer',4000,
+        { 'GTM-MHDDSC' :true});</script>
+        --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MHDDSC');</script><!-- Google Tag Manager --><noscript><iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-MHDDSC" style="display: none; visibility: hidden;" width="0"></iframe></noscript><!-- End Google Tag Manager --><link rel="preload" href="//next.tnwcdn.com/assets/next/css/base.css?b961b1f9063778cba08629c3096be89b4f5c4fc7" as="style"><link href="//next.tnwcdn.com/assets/next/css/base.css?b961b1f9063778cba08629c3096be89b4f5c4fc7" rel="stylesheet" type="text/css"><link rel="preload" href="//next.tnwcdn.com/assets/next/css/media.css?b961b1f9063778cba08629c3096be89b4f5c4fc7" as="style"><link href="//next.tnwcdn.com/assets/next/css/media.css?b961b1f9063778cba08629c3096be89b4f5c4fc7" rel="stylesheet" type="text/css" media="print" onload="this.media='all'"><noscript><link href="//next.tnwcdn.com/assets/next/css/media.css?b961b1f9063778cba08629c3096be89b4f5c4fc7" rel="stylesheet" type="text/css"></noscript><link rel="icon" href="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/icons/favicon-16x16.png?v=1510743095" sizes="16x16" type="image/png"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"><link rel="manifest" href="/manifest.json"><link rel="dns-prefetch" href="//cdn0.tnwcdn.com/"><link rel="dns-prefetch" href="//next.tnwcdn.com/"><link rel="dns-prefetch" href="//img-cdn.tnwcdn.com/"><link rel="dns-prefetch" href="//cdnjs.cloudflare.com/"><link rel="dns-prefetch" href="//www.googletagmanager.com"><link rel="dns-prefetch" href="//massariuscdn.com/"><link rel="preconnect" href="//cdn0.tnwcdn.com/"><link rel="preconnect" href="//next.tnwcdn.com/"><link rel="preconnect" href="//img-cdn.tnwcdn.com/"><link rel="preconnect" href="//www.googletagmanager.com"><link rel="preconnect" href="//cdnjs.cloudflare.com/"><link rel="preconnect" href="//massariuscdn.com/"><link rel="stylesheet preload" as="style" href="//use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" async><link rel="canonical" href="https://thenextweb.com/"/><link rel="preload" href="https://gdpr.privacymanager.io/1/gdpr.bundle.js" as="script"/><!-- OpenGraph --><meta content="https://thenextweb.com/" property="og:url"/><meta content="We inform, inspire, and connect people who love tech" property="og:description"/><meta content="TNW | The heart of tech" property="og:site_name"/><meta content="TNW | The heart of tech" property="og:title"/><meta content="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/social/tnw_191007_110526.png" property="og:image"/><meta content="630" property="og:image:height"/><meta content="1200" property="og:image:width"/><meta property="og:locale" content="en_US"><meta content="website" property="og:type"/><meta content="378011798897423" property="fb:app_id"/><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@thenextweb"/><meta name="twitter:title" content="TNW | The heart of tech"/><meta name="twitter:description" content="We inform, inspire, and connect people who love tech"/><meta name="twitter:image" content="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/social/tnw_191007_110526.png"/><meta name="twitter:creator" content="@thenextweb"/><script type="text/javascript" async>var msTag = {"site":"tnw","page":"home","data":{"isSponsoredCategory":"No","isSponsoredPost":false}};</script><script src="//massariuscdn.com/pubs/tnw/tnw_hb_setup.js" async></script><script>
+            var APP_ENV = {
+                'site_url': 'https://thenextweb.com/' + '',
+                'cookie_domain': '.thenextweb.com'
+            };
+        </script><script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"https:\/\/thenextweb.com\/#website","name":"The Next Web","alternateName":"TNW","url":"https:\/\/thenextweb.com\/","publisher":{"@type":"Organization","@id":"http:\/\/data.thenextweb.com\/tnw\/entity\/the_next_web","name":"The Next Web","sameAs":["https:\/\/en.wikipedia.org\/wiki\/The_Next_Web","https:\/\/www.facebook.com\/thenextweb","https:\/\/www.twitter.com\/thenextweb","https:\/\/plus.google.com\/+TheNextWeb\/","https:\/\/instagram.com\/thenextweb","https:\/\/www.youtube.com\/user\/thenextweb","https:\/\/www.pinterest.com\/thenextweb\/","https:\/\/www.linkedin.com\/company\/the-next-web","https:\/\/vine.co\/thenextweb","https:\/\/thenextweb.tumblr.com","https:\/\/soundcloud.com\/thenextweb","https:\/\/vimeo.com\/thenextweb","https:\/\/vk.com\/thenextweb","https:\/\/www.slideshare.net\/thenextweb","https:\/\/flipboard.com\/@thenextweb","https:\/\/storify.com\/thenextweb","https:\/\/www.stumbleupon.com\/channel\/thenextweb","https:\/\/www.flickr.com\/photos\/thenextweb\/","https:\/\/foursquare.com\/thenextweb"]},"potentialAction":{"@type":"SearchAction","target":"https:\/\/thenextweb.com\/?q={search_term_string}","query-input":"required name=search_term_string"}}</script><script type="application/ld+json">{"@context":"https:\/\/schema.org","@id":"#Publisher","@type":"Organization","name":"The Next Web","logo":"https:\/\/cdn0.tnwcdn.com\/plus\/img\/tnw-brandmark.svg","url":"https:\/\/thenextweb.com","sameAs":["https:\/\/en.wikipedia.org\/wiki\/The_Next_Web","http:\/\/www.facebook.com\/thenextweb","https:\/\/www.twitter.com\/thenextweb","https:\/\/plus.google.com\/+TheNextWeb\/","https:\/\/instagram.com\/thenextweb","https:\/\/www.youtube.com\/user\/thenextweb","https:\/\/www.pinterest.com\/thenextweb\/","https:\/\/www.linkedin.com\/company\/the-next-web","https:\/\/vine.co\/thenextweb","https:\/\/thenextweb.tumblr.com","https:\/\/soundcloud.com\/thenextweb","https:\/\/vimeo.com\/thenextweb","https:\/\/vk.com\/thenextweb","https:\/\/www.slideshare.net\/thenextweb","https:\/\/flipboard.com\/@thenextweb","https:\/\/storify.com\/thenextweb","https:\/\/www.stumbleupon.com\/channel\/thenextweb","https:\/\/www.flickr.com\/photos\/thenextweb\/","https:\/\/foursquare.com\/thenextweb"]}</script></head><body class="site-tnwNext " id="next-top"><div id="fb-root"></div><nav class="c-nav has-level2" id="nav" role="navigation" style="top: 0;"><div class="c-nav__level1"><input class="c-nav__menuToggle js-menuToggleLevel" data-nav-level="1" id="nav-menuLevel1" name="" type="checkbox"><label class="c-nav__levelLabel c-nav__levelLabel--1" for="nav-menuLevel1"></label><div class="navLabel_dt"><a class="c-nav__logo" href="/" data-event-category="Article" data-event-action="Navigation bar" data-event-label="TNW Logo" name="TNW Logo" data-event-non-interaction="false"><svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 66 16"><path d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"></path></svg></a></div><div class="c-nav__menuContainer c-nav__menuContainer--1" id="overlay__hook"><ul class="c-nav__menu"><li class="c-nav__menuItem"><a class="c-nav__menuLink" data-event-category="Navigation bar" data-event-action="Home" data-event-label="Navigation bar - click" data-event-non-interaction="false" href="/" >
+                                Home
+                            </a></li><li class="c-nav__menuItem has-grid" tabindex="-1"><input class="c-nav__menuToggle" id="nav-menuToggle--GlobalNews" name="nav-menuToggle--GlobalNews" type="checkbox"><a aria-haspopup="grid" class="c-nav__menuLink">News
+                                <label class="c-nav__menuLabel" for="nav-menuToggle--GlobalNews"></label></a><div class="c-nav__grid" role="grid"><div class="c-navGrid" id="editorial"><div class="c-navGrid__group"><h6 class="c-navGrid__groupHeading">General</h6><div class="c-navGrid__row"><a class="c-navGrid__item" href="/latest" data-event-category="Navigation bar" data-event-action="News - general" data-event-label="Latest" data-event-non-interaction="false"><img
+                                                            alt="Latest"
+                                                            class="c-navGrid__itemImage js-lazy"
+                                                            data-src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fnews-latest.jpg&amp;signature=32ecb67934b71e808145ad05151f1786"
+                                                            width="160"
+                                                            height="90"><noscript><img
+                                                                alt="Latest"
+                                                                class="c-navGrid__itemImage"
+                                                                src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fnews-latest.jpg&amp;signature=32ecb67934b71e808145ad05151f1786"
+                                                                width="160"
+                                                                height="90"></noscript><div class="c-navGrid__itemText"><h5 class="c-navGrid__itemHeading">Latest</h5><p class="c-navGrid__itemDesc">The latest tech news</p></div></a></div></div><div class="c-navGrid__group"><h6 class="c-navGrid__groupHeading">Channels</h6><div class="c-navGrid__row"><a class="c-navGrid__item" href="/plugged" data-event-category="Navigation bar" data-event-action="News - general" data-event-label="Latest" data-event-non-interaction="false"><img
+                                                            alt="Latest"
+                                                            class="c-navGrid__itemImage js-lazy"
+                                                            data-src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fnews-plugged.jpg&amp;signature=a696fb1a643ca004e7a933f50cb8b639"
+                                                            width="160"
+                                                            height="90"><noscript><img
+                                                                alt="Latest"
+                                                                class="c-navGrid__itemImage"
+                                                                src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fnews-plugged.jpg&amp;signature=a696fb1a643ca004e7a933f50cb8b639"
+                                                                width="160"
+                                                                height="90"></noscript><div class="c-navGrid__itemText"><h5 class="c-navGrid__itemHeading">Plugged</h5><p class="c-navGrid__itemDesc">Your sardonic source for consumer tech stories</p></div></a><a class="c-navGrid__item" href="/neural" data-event-category="Navigation bar" data-event-action="News - general" data-event-label="Latest" data-event-non-interaction="false"><img
+                                                            alt="Latest"
+                                                            class="c-navGrid__itemImage js-lazy"
+                                                            data-src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fneural.jpg&amp;signature=97e70efa006bf9756dc963dda67cb70b"
+                                                            width="160"
+                                                            height="90"><noscript><img
+                                                                alt="Latest"
+                                                                class="c-navGrid__itemImage"
+                                                                src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fneural.jpg&amp;signature=97e70efa006bf9756dc963dda67cb70b"
+                                                                width="160"
+                                                                height="90"></noscript><div class="c-navGrid__itemText"><h5 class="c-navGrid__itemHeading">Neural</h5><p class="c-navGrid__itemDesc">Human-centric AI news and analysis</p></div></a><a class="c-navGrid__item" href="/shift" data-event-category="Navigation bar" data-event-action="News - general" data-event-label="Latest" data-event-non-interaction="false"><img
+                                                            alt="Latest"
+                                                            class="c-navGrid__itemImage js-lazy"
+                                                            data-src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fshift-nav_2021-02-23-105938.jpg&amp;signature=963427c6d5128fdc7ad34fa68e696daf"
+                                                            width="160"
+                                                            height="90"><noscript><img
+                                                                alt="Latest"
+                                                                class="c-navGrid__itemImage"
+                                                                src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fshift-nav_2021-02-23-105938.jpg&amp;signature=963427c6d5128fdc7ad34fa68e696daf"
+                                                                width="160"
+                                                                height="90"></noscript><div class="c-navGrid__itemText"><h5 class="c-navGrid__itemHeading">Shift</h5><p class="c-navGrid__itemDesc">Driving the future of sustainable mobility</p></div></a><a class="c-navGrid__item" href="/growth-quarters" data-event-category="Navigation bar" data-event-action="News - general" data-event-label="Latest" data-event-non-interaction="false"><img
+                                                            alt="Latest"
+                                                            class="c-navGrid__itemImage js-lazy"
+                                                            data-src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fgrowth-quarters.nav_2021-02-23-110956.jpg&amp;signature=f8d4398b2338b28246aabd4daffa56c4"
+                                                            width="160"
+                                                            height="90"><noscript><img
+                                                                alt="Latest"
+                                                                class="c-navGrid__itemImage"
+                                                                src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fgrowth-quarters.nav_2021-02-23-110956.jpg&amp;signature=f8d4398b2338b28246aabd4daffa56c4"
+                                                                width="160"
+                                                                height="90"></noscript><div class="c-navGrid__itemText"><h5 class="c-navGrid__itemHeading">Growth Quarters</h5><p class="c-navGrid__itemDesc">No-nonsense stories about startup growth</p></div></a><a class="c-navGrid__item" href="/hardfork" data-event-category="Navigation bar" data-event-action="News - general" data-event-label="Latest" data-event-non-interaction="false"><img
+                                                            alt="Latest"
+                                                            class="c-navGrid__itemImage js-lazy"
+                                                            data-src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fnews-hardfork.jpg&amp;signature=7e9d4a1556955e071e53ad04bbf2ebd5"
+                                                            width="160"
+                                                            height="90"><noscript><img
+                                                                alt="Latest"
+                                                                class="c-navGrid__itemImage"
+                                                                src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fnews-hardfork.jpg&amp;signature=7e9d4a1556955e071e53ad04bbf2ebd5"
+                                                                width="160"
+                                                                height="90"></noscript><div class="c-navGrid__itemText"><h5 class="c-navGrid__itemHeading">Hard Fork</h5><p class="c-navGrid__itemDesc">Inside money, markets, and Big Tech</p></div></a></div></div><div class="c-navGrid__group"><h6 class="c-navGrid__groupHeading">Sponsored Channels</h6><div class="c-navGrid__row"><a class="c-navGrid__item" href="/future-of-finance" data-event-category="Navigation bar" data-event-action="News - general" data-event-label="Latest" data-event-non-interaction="false"><img
+                                                            alt="Latest"
+                                                            class="c-navGrid__itemImage js-lazy"
+                                                            data-src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Ffuture-of-finance.jpeg&amp;signature=8b04199c215450a3fabe0ffdb964f17a"
+                                                            width="160"
+                                                            height="90"><noscript><img
+                                                                alt="Latest"
+                                                                class="c-navGrid__itemImage"
+                                                                src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Ffuture-of-finance.jpeg&amp;signature=8b04199c215450a3fabe0ffdb964f17a"
+                                                                width="160"
+                                                                height="90"></noscript><div class="c-navGrid__itemText"><h5 class="c-navGrid__itemHeading">Future of Finance</h5><p class="c-navGrid__itemDesc">Help build the bank of the future</p></div></a><a class="c-navGrid__item" href="/readme" data-event-category="Navigation bar" data-event-action="News - general" data-event-label="Latest" data-event-non-interaction="false"><img
+                                                            alt="Latest"
+                                                            class="c-navGrid__itemImage js-lazy"
+                                                            data-src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Freadme.jpeg&amp;signature=3d2229c8a3963e87454978e263d073fc"
+                                                            width="160"
+                                                            height="90"><noscript><img
+                                                                alt="Latest"
+                                                                class="c-navGrid__itemImage"
+                                                                src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Freadme.jpeg&amp;signature=3d2229c8a3963e87454978e263d073fc"
+                                                                width="160"
+                                                                height="90"></noscript><div class="c-navGrid__itemText"><h5 class="c-navGrid__itemHeading">Read Me</h5><p class="c-navGrid__itemDesc">Coding for Public Service</p></div></a><a class="c-navGrid__item" href="/dutch-disruptors" data-event-category="Navigation bar" data-event-action="News - general" data-event-label="Latest" data-event-non-interaction="false"><img
+                                                            alt="Latest"
+                                                            class="c-navGrid__itemImage js-lazy"
+                                                            data-src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fdutch-disruptors-nav.jpg&amp;signature=54eb3083b02fa4ab00a04e28d88917fe"
+                                                            width="160"
+                                                            height="90"><noscript><img
+                                                                alt="Latest"
+                                                                class="c-navGrid__itemImage"
+                                                                src="https://img-cdn.tnwcdn.com/image?fit=160%2C90&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fdutch-disruptors-nav.jpg&amp;signature=54eb3083b02fa4ab00a04e28d88917fe"
+                                                                width="160"
+                                                                height="90"></noscript><div class="c-navGrid__itemText"><h5 class="c-navGrid__itemHeading">Dutch Disruptors</h5><p class="c-navGrid__itemDesc">Small country, big ideas</p></div></a></div></div></div></div></li><li class="c-nav__menuItem has-menu" tabindex="-1"><input class="c-nav__menuToggle" id="nav-menuToggle--GlobalEvents" name="nav-menuToggle--GlobalEvents" type="checkbox"><a aria-haspopup="grid" class="c-nav__menuLink">Events
+                                <label class="c-nav__menuLabel" for="nav-menuToggle--GlobalEvents"></label></a><ul class="c-nav__submenu" role="menu"><li class="c-nav__submenuItem"><a class="c-nav__submenuLink" href="/conference" data-event-category="Navigation bar" data-event-action="Events" data-event-label="Advertise" data-event-non-interaction="false"   target="_blank" rel="noopener noreferrer"><span class="c-nav__submenuLinkTitle">TNW Conference</span><span class="c-nav__submenuLinkNote">Sept 30 &amp; Oct 1 · Hybrid</span></a></li></ul></li><li class="c-nav__menuItem"><a class="c-nav__menuLink" data-event-category="Navigation bar" data-event-action="Programs" data-event-label="Navigation bar - click" data-event-non-interaction="false" href="/programs"  target="_blank" rel="noopener noreferrer">
+                                Programs
+                            </a></li><li class="c-nav__menuItem"><a class="c-nav__menuLink" data-event-category="Navigation bar" data-event-action="Spaces" data-event-label="Navigation bar - click" data-event-non-interaction="false" href="/spaces"  target="_blank" rel="noopener noreferrer">
+                                Spaces
+                            </a></li><li class="c-nav__menuItem has-menu" tabindex="-1"><input class="c-nav__menuToggle" id="nav-menuToggle--GlobalMore" name="nav-menuToggle--GlobalMore" type="checkbox"><a aria-haspopup="grid" class="c-nav__menuLink">More
+                                <label class="c-nav__menuLabel" for="nav-menuToggle--GlobalMore"></label></a><ul class="c-nav__submenu" role="menu"><li class="c-nav__submenuItem"><a class="c-nav__submenuLink" href="/advertise" data-event-category="Navigation bar" data-event-action="Events" data-event-label="Advertise" data-event-non-interaction="false"  ><span class="c-nav__submenuLinkTitle">Advertise</span><span class="c-nav__submenuLinkNote">Advertise with us</span></a></li><li class="c-nav__submenuItem"><a class="c-nav__submenuLink" href="/conference/partners" data-event-category="Navigation bar" data-event-action="Events" data-event-label="Advertise" data-event-non-interaction="false"  ><span class="c-nav__submenuLinkTitle">Partner</span><span class="c-nav__submenuLinkNote">Partner with us</span></a></li><li class="c-nav__submenuItem"><a class="c-nav__submenuLink" href="https://deals.thenextweb.com" data-event-category="Navigation bar" data-event-action="Events" data-event-label="Advertise" data-event-non-interaction="false"  ><span class="c-nav__submenuLinkTitle">Deals</span><span class="c-nav__submenuLinkNote">TNW Deals scours the web for the newest software, gadgets &amp; web services</span></a></li></ul></li></ul><ul class="c-nav__icons"><li class="c-nav__iconsItem"><a href="/newsletters" style="margin-right: .5em;" data-event-category="Navigation bar" data-event-action="Newsletter" data-event-label="Newsletters top right - click" data-event-non-interaction="false"><svg class="c-button__icon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg></a></li></ul><footer class="c-nav__footer"><ul class="c-nav__social"><li class="c-nav__socialItem"><a class="c-nav__socialLink" href="https://facebook.com/thenextweb" target="_blank" rel="noopener noreferrer" name="Facebook Social Link"><svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg></a></li><li class="c-nav__socialItem"><a class="c-nav__socialLink" href="https://www.instagram.com/thenextweb" target="_blank" rel="noopener noreferrer" name="Instagram Social Link"><svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg></a></li><li class="c-nav__socialItem"><a class="c-nav__socialLink" href="https://twitter.com/thenextweb" target="_blank" rel="noopener noreferrer" name="Twitter Social Link"><svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg></a></li><li class="c-nav__socialItem"><a class="c-nav__socialLink" href="https://youtube.com/user/thenextweb" target="_blank" rel="noopener noreferrer" name="Youtube Social Link"><svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg></a></li><li class="c-nav__socialItem"><a class="c-nav__socialLink" href="https://flipboard.com/@thenextweb" target="_blank" rel="noopener noreferrer" name="Flipboard Social Link"><svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg></a></li><li class="c-nav__socialItem"><a class="c-nav__socialLink" href="/cdn-cgi/l/email-protection#a0c3cfced4c1c3d4e0d4c8c5cec5d8d4d7c5c28ec3cfcd" name="Email Social Link"><svg class="c-nav__socialIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg></a></li></ul><ul class="c-nav__company"><li class="c-nav__companyItem"><a class="c-nav__companyLink" href="https://tnw.homerun.co/" target="_blank" rel="noopener noreferrer">Jobs</a></li><li class="c-nav__companyItem"><a class="c-nav__companyLink" href="/cdn-cgi/l/email-protection#335a5d555c73475d441d505c">Contact</a></li></ul></footer></div></div><div class="c-nav__level2 tnw news"><input class="c-nav__menuToggle js-menuToggleLevel" data-nav-level="2" id="nav-menuLevel2" name="MenuToggle" type="checkbox"><div class="c-nav__pwd"><a class="c-nav__pwdLogo" href="/"><svg><use xlink:href="/assets/next/img/icons.svg#tnw"></use></svg></a><a class="c-nav__pwdSite" href="/" title=""><span class="sm:hidden" id="channelName_abbr"></span><span class="max-sm:hidden xl:hidden"></span><span class="max-xl:hidden" id="channelName_mob"></span></a></div><div class="c-nav__menuContainer c-nav__menuContainer--2"></div><div class="c-nav__ctas"><div
+                        class="c-nav__iconsItem searchIcon fixed top-0 right-0 cursor-pointer z-90 lg:hidden"
+                        tabindex="0"
+                        role="button"
+                    ><div class="c-nav__iconsLink"><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            class="c-nav__iconsIcon text-brand-aquatext-copy-main hover:text-brand-aqua fill-current"
+                            style="padding: 0"
+                        ><path d="M15.5,14h-0.79l-0.28-0.27C15.41,12.59,16,11.11,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5S5.91,16,9.5,16  c1.61,0,3.09-0.59,4.23-1.57L14,14.71v0.79l5,4.99L20.49,19L15.5,14z M9.5,14C7.01,14,5,11.99,5,9.5S7.01,5,9.5,5S14,7.01,14,9.5  S11.99,14,9.5,14z" /></svg></div></div></div></div></nav><a href="https://thenextweb.com/conference" target="_blank" rel="noopener"><div
+                data-event-category="Yellow bar"
+                data-event-action="Yellow bar"
+                data-event-label="Yellow bar - click"
+                class="c-nav__message c-nav__message--global" 
+                style="top: 3em; z-index: 48;"
+            ><p>Rub shoulders with leading experts and industry disruptors at TNW Conference →</p></div></a><div class="o-page"><div class="o-page__main"><div class="nextHome" id="nextHome"><div class='tnw-ad ad-unit-TNW_ROS_HEADER' data-ad='TNW_ROS_HEADER' id='TNW_ROS_HEADER'  data-ad-initialized="true"></div><section class="c-showcase c-nextHomeHeaderGrid c-homeLead"><!-- include option one --><div class="o-wrapper"><div class="c-showcase__header nxtHome"><header class="c-sectionHeader--center"><div class="c-sectionHeader__heading homepage"><a href="https://thenextweb.com/"><svg serveAspectRatio="xMidYMid meet" viewBox="0 0 66 16" xmlns="http://www.w3.org/2000/svg"><path fill="#000" class="nextLogo" d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"/></svg></a></div><h1 class="text-center mob-tagline">The heart of tech</h1></header><div class="c-brandIntro__text"><h1>
+                            The heart of tech
+                        </h1></div></div></div><div class="o-wrapper o-wrapper--wide"><div class="c-showcase__grid"><div class="c-showcase__grid c-showcase__scroller js-parallaxRoot"><article class="c-showcase__article"><div class="c-card c-card--visual"><a class="c-card__image js-parallax o-media md:o-media--stretch" href="https://thenextweb.com/news/facebook-smart-glasses-ray-ban-but-no-ar" data-event-category="Homepage" data-event-action="Top story" data-event-label="Facebook is making glasses with Ray-Ban — but don’t expect AR features"><img
+                                                alt="Facebook is making glasses with Ray-Ban — but don’t expect AR features"
+                                                class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy"
+                                                data-src="https://img-cdn.tnwcdn.com/image?fit=600%2C300&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Frayban.jpeg&amp;signature=24ba8fb1030c4e128cbad1b6148b879e"><noscript><img
+                                                    alt="Facebook is making glasses with Ray-Ban — but don’t expect AR features"
+                                                    class="c-card__imageImage o-parallax__layer"
+                                                    src="https://img-cdn.tnwcdn.com/image?fit=600%2C300&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Frayban.jpeg&amp;signature=24ba8fb1030c4e128cbad1b6148b879e"></noscript></a><header class="c-card__header"><h6 class="c-card__label">All aboard the metaverse</h6><h3 class="c-card__heading"><a href="https://thenextweb.com/news/facebook-smart-glasses-ray-ban-but-no-ar" data-event-category="Homepage" data-event-action="Top story" data-event-label="Facebook is making glasses with Ray-Ban — but don’t expect AR features">Facebook is making glasses with Ray-Ban — but don’t expect AR features</a></h3></header></div></article><article class="c-showcase__article"><div class="c-card c-card--visual"><a class="c-card__image js-parallax o-media md:o-media--stretch" href="https://thenextweb.com/news/immortality-spaghetti-spaceship-inside-a-black-hole-time-travel" data-event-category="Homepage" data-event-action="Top story" data-event-label="Immortality or spaghetti? Why parking your spaceship inside a black hole is a huge gamble"><img
+                                                alt="Immortality or spaghetti? Why parking your spaceship inside a black hole is a huge gamble"
+                                                class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy"
+                                                data-src="https://img-cdn.tnwcdn.com/image?fit=600%2C300&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fspaghetti.jpeg&amp;signature=839db0aa2686153ca9e42ff5c6613091"><noscript><img
+                                                    alt="Immortality or spaghetti? Why parking your spaceship inside a black hole is a huge gamble"
+                                                    class="c-card__imageImage o-parallax__layer"
+                                                    src="https://img-cdn.tnwcdn.com/image?fit=600%2C300&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fspaghetti.jpeg&amp;signature=839db0aa2686153ca9e42ff5c6613091"></noscript></a><header class="c-card__header"><h6 class="c-card__label">NEURAL</h6><h3 class="c-card__heading"><a href="https://thenextweb.com/news/immortality-spaghetti-spaceship-inside-a-black-hole-time-travel" data-event-category="Homepage" data-event-action="Top story" data-event-label="Immortality or spaghetti? Why parking your spaceship inside a black hole is a huge gamble">Immortality or spaghetti? Why parking your spaceship inside a black hole is a huge gamble</a></h3></header></div></article><article class="c-showcase__article"><div class="c-card c-card--visual"><a class="c-card__image js-parallax o-media md:o-media--stretch" data-event-category="Homepage" data-event-action="Top story" data-event-label="TNW Conference goes hybrid" data-event-non-interaction="false" href="https://thenextweb.com/conference"><img
+                                                alt="Ad panel"
+                                                class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy"
+                                                data-src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/conference-banner.jpg"><noscript><img
+                                                    alt="Ad panel"
+                                                    class="c-card__imageImage o-parallax__layer"
+                                                    src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/conference-banner.jpg"></noscript></a><header class="c-card__header advertPane"><h2 class="c-card__heading adpanel">This is the one event you don&#039;t want to miss</h2><h2 class="c-card__heading adpanel">TNW Conference goes hybrid</h2><a class="c-button adpanel c-button--rounded" data-event-category="Homepage" data-event-action="Top story - CTA" data-event-label="TNW2021" href="https://thenextweb.com/conference" target="_blank" rel="noopener noreferrer">
+                                                GET TICKETS
+                                            </a></header></div></article><article class="c-showcase__article"><div class="c-card c-card--visual"><a class="c-card__image js-parallax o-media md:o-media--stretch" href="https://thenextweb.com/news/cowboy-4-review-ebike-delicious-enough-to-eat" data-event-category="Homepage" data-event-action="Top story" data-event-label="Best ebike on the market for casual rider"><img
+                                                alt="Best ebike on the market for casual rider"
+                                                class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy"
+                                                data-src="https://img-cdn.tnwcdn.com/image?fit=600%2C300&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fcowboy_2021-07-30-065241_efvy.jpeg&amp;signature=86a56c8544287c99af934a469fa87965"><noscript><img
+                                                    alt="Best ebike on the market for casual rider"
+                                                    class="c-card__imageImage o-parallax__layer"
+                                                    src="https://img-cdn.tnwcdn.com/image?fit=600%2C300&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fvisuals%2Fcowboy_2021-07-30-065241_efvy.jpeg&amp;signature=86a56c8544287c99af934a469fa87965"></noscript></a><header class="c-card__header"><h6 class="c-card__label">COWBOY 4 REVIEW</h6><h3 class="c-card__heading"><a href="https://thenextweb.com/news/cowboy-4-review-ebike-delicious-enough-to-eat" data-event-category="Homepage" data-event-action="Top story" data-event-label="Best ebike on the market for casual rider">Best ebike on the market for casual rider</a></h3></header></div></article><article class="c-showcase__article"><div class="c-card c-card--visual"><a class="c-card__image js-parallax o-media md:o-media--stretch" href="https://youtu.be/kIie5LVh7NE" data-event-category="Homepage" data-event-action="Top story" data-event-label="What size iPad Pro should you buy?"><img
+                                                alt="What size iPad Pro should you buy?"
+                                                class="c-card__imageImage js-parallaxLayer o-parallax__layer js-lazy"
+                                                data-src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/gif-airpod.gif"><noscript><img
+                                                    alt="What size iPad Pro should you buy?"
+                                                    class="c-card__imageImage o-parallax__layer"
+                                                    src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/gif-airpod.gif"></noscript></a><header class="c-card__header"><h6 class="c-card__label">VIDEO</h6><h3 class="c-card__heading"><a href="https://youtu.be/kIie5LVh7NE" data-event-category="Homepage" data-event-action="Top story" data-event-label="What size iPad Pro should you buy?">What size iPad Pro should you buy?</a></h3></header></div></article></div></div></div><!-- end include option one --></section><section class="c-showcase advert"><div class="c-showcase__article"><div class="c-card c-card--visual"><a class="c-card__image js-parallax o-media md:o-media--stretch" href="https://thenextweb.com/conference" arget="_blank" rel="noopener noreferrer"><img
+                            alt="Ad panel"
+                            class="c-card__imageImage js-parallaxLayer o-parallax__content js-lazy"
+                            data-src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fcompanies%2Fconference-banner.jpg&amp;signature=2453aa544d1fe8006817809eca3cb189"><noscript><img
+                                alt="Ad panel"
+                                class="c-card__imageImage o-parallax__content"
+                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fs3.amazonaws.com%2Fevents.tnw%2Fhardfork-2018%2Fuploads%2Fcompanies%2Fconference-banner.jpg&amp;signature=2453aa544d1fe8006817809eca3cb189"></noscript></a><header class="c-card__header smallAdvertPane"><h2 class="c-card__heading adpanel">This is the one event you don&#039;t want to miss</h2><h2 class="c-card__heading adpanel">TNW Conference goes hybrid</h2><a class="c-button adpanel c-button--rounded" data-event-category="Homepage" data-event-action="Top story - CTA" data-event-label="This is the one event you don&#039;t want to miss" data-event-non-interaction="false" href="https://thenextweb.com/conference" target="_blank" rel="noopener noreferrer">
+                        GET TICKETS
+                    </a></header></div></div></section><br><div class='tnw-ad ad-unit-TNW_ROS_TOP' data-ad='TNW_ROS_TOP' id='TNW_ROS_TOP'  data-ad-initialized="true"></div><br><section class="c-showcase c-showcaseTrending o-bodyBlock"><div class="o-wrapper o-wrapper--wide"><div id="react-popular"></div></div></section><section class="c-bodyBlock o-bodyBlock"><div class="o-wrapper"><div class="c-bodyNews__header m-none"><h2 class="c-bodyNews__heading o-bodyBlock__heading">
+                            Latest stories
+                        </h2></div><ul class="o-grid o-grid--centered o-grid--gap-l sm:o-grid--gap-xl"><li class="o-grid__col md:o-grid__col--1/2 lg:o-grid__col--1/4"><a
+                                href="/news/smartest-management-knowing-you-are-not-smart"
+                                class="flex md:flex-col"
+                                data-event-category="Homepage"
+                                data-event-action="Latest stories"
+                                data-event-label="The smartest management trick is knowing your not smart"
+                                data-event-non-interaction="false"
+                            ><div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none"><div class="o-media o-media--1:1 rounded-full md:o-media--16:9 md:rounded-none"><img
+                                            class="js-lazy"
+                                            data-src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fboris-not-smartest-gq.jpg&amp;signature=2cfe4e34d0447e84639b1d70ac8f75d0"
+                                            alt="The smartest management trick is knowing your not smart"><noscript><img
+                                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2Fboris-not-smartest-gq.jpg&amp;signature=2cfe4e34d0447e84639b1d70ac8f75d0"
+                                                alt="The smartest management trick is knowing your not smart"></noscript></div></div><div class="flex-1 md:mt-m"><h4 class="text-s leading-snug sm:text-m sm:leading-normal"><span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">
+                                            The smartest management trick is knowing your not smart
+                                        </span></h4><p class="text-xs text-copy-light pt-xs md:text-s">
+                                        6 minutes ago
+                                    </p></div></a></li><li class="o-grid__col md:o-grid__col--1/2 lg:o-grid__col--1/4"><a
+                                href="/news/facebook-smart-glasses-ray-ban-but-no-ar"
+                                class="flex md:flex-col"
+                                data-event-category="Homepage"
+                                data-event-action="Latest stories"
+                                data-event-label="Facebook is making glasses with Ray-Ban — but don&amp;#8217;t expect AR features"
+                                data-event-non-interaction="false"
+                            ><div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none"><div class="o-media o-media--1:1 rounded-full md:o-media--16:9 md:rounded-none"><img
+                                            class="js-lazy"
+                                            data-src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2FZuck-Ray.jpg&amp;signature=9eab717e2f1a1c0b639896d03976d151"
+                                            alt="Facebook is making glasses with Ray-Ban — but don&amp;#8217;t expect AR features"><noscript><img
+                                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2FZuck-Ray.jpg&amp;signature=9eab717e2f1a1c0b639896d03976d151"
+                                                alt="Facebook is making glasses with Ray-Ban — but don&amp;#8217;t expect AR features"></noscript></div></div><div class="flex-1 md:mt-m"><h4 class="text-s leading-snug sm:text-m sm:leading-normal"><span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">
+                                            Facebook is making glasses with Ray-Ban — but don&#8217;t expect AR features
+                                        </span></h4><p class="text-xs text-copy-light pt-xs md:text-s">
+                                        2 hours ago
+                                    </p></div></a></li><li class="o-grid__col md:o-grid__col--1/2 lg:o-grid__col--1/4"><a
+                                href="/news/the-windows-11-beta-is-finally-out-heres-how-to-install-it"
+                                class="flex md:flex-col"
+                                data-event-category="Homepage"
+                                data-event-action="Latest stories"
+                                data-event-label="The Windows 11 beta is finally out — here&amp;#8217;s how to install it"
+                                data-event-non-interaction="false"
+                            ><div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none"><div class="o-media o-media--1:1 rounded-full md:o-media--16:9 md:rounded-none"><img
+                                            class="js-lazy"
+                                            data-src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=3ca2ca66fe8e76d5addcaf763e9e9d1e"
+                                            alt="The Windows 11 beta is finally out — here&amp;#8217;s how to install it"><noscript><img
+                                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F06%2FWindows-11.jpg&amp;signature=3ca2ca66fe8e76d5addcaf763e9e9d1e"
+                                                alt="The Windows 11 beta is finally out — here&amp;#8217;s how to install it"></noscript></div></div><div class="flex-1 md:mt-m"><h4 class="text-s leading-snug sm:text-m sm:leading-normal"><span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">
+                                            The Windows 11 beta is finally out — here&#8217;s how to install it
+                                        </span></h4><p class="text-xs text-copy-light pt-xs md:text-s">
+                                        10 hours ago
+                                    </p></div></a></li><li class="o-grid__col md:o-grid__col--1/2 lg:o-grid__col--1/4"><a
+                                href="/news/teslas-new-software-update-includes-disney-and-i-am-sweating-with-joy"
+                                class="flex md:flex-col"
+                                data-event-category="Homepage"
+                                data-event-action="Latest stories"
+                                data-event-label="Tesla’s new update includes Disney+ and I AM SWEATING WITH JOY"
+                                data-event-non-interaction="false"
+                            ><div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none"><div class="o-media o-media--1:1 rounded-full md:o-media--16:9 md:rounded-none"><img
+                                            class="js-lazy"
+                                            data-src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2FUntitled-design-4-8.jpg&amp;signature=8f5486b66f606d2292b922534b5a9ebb"
+                                            alt="Tesla’s new update includes Disney+ and I AM SWEATING WITH JOY"><noscript><img
+                                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2FUntitled-design-4-8.jpg&amp;signature=8f5486b66f606d2292b922534b5a9ebb"
+                                                alt="Tesla’s new update includes Disney+ and I AM SWEATING WITH JOY"></noscript></div></div><div class="flex-1 md:mt-m"><h4 class="text-s leading-snug sm:text-m sm:leading-normal"><span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">
+                                            Tesla’s new update includes Disney+ and I AM SWEATING WITH JOY
+                                        </span></h4><p class="text-xs text-copy-light pt-xs md:text-s">
+                                        17 hours ago
+                                    </p></div></a></li><li class="o-grid__col md:o-grid__col--1/2 lg:o-grid__col--1/4"><a
+                                href="/news/improve-your-memory-concentration-and-more-with-15-minutes-per-day-with-neuronation"
+                                class="flex md:flex-col"
+                                data-event-category="Homepage"
+                                data-event-action="Latest stories"
+                                data-event-label="Improve your memory, concentration and more with 15 minutes per day with NeuroNation"
+                                data-event-non-interaction="false"
+                            ><div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none"><div class="o-media o-media--1:1 rounded-full md:o-media--16:9 md:rounded-none"><img
+                                            class="js-lazy"
+                                            data-src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2FTNW-NeuroNation.jpeg&amp;signature=4c791ba41e767029dd2b7293173ad71c"
+                                            alt="Improve your memory, concentration and more with 15 minutes per day with NeuroNation"><noscript><img
+                                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2FTNW-NeuroNation.jpeg&amp;signature=4c791ba41e767029dd2b7293173ad71c"
+                                                alt="Improve your memory, concentration and more with 15 minutes per day with NeuroNation"></noscript></div></div><div class="flex-1 md:mt-m"><h4 class="text-s leading-snug sm:text-m sm:leading-normal"><span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">
+                                            Improve your memory, concentration and more with 15 minutes per day with NeuroNation
+                                        </span></h4><p class="text-xs text-copy-light pt-xs md:text-s">
+                                        18 hours ago
+                                    </p></div></a></li><li class="o-grid__col md:o-grid__col--1/2 lg:o-grid__col--1/4"><a
+                                href="/news/get-a-lifetime-of-unlimited-online-privacy-and-security-for-just-28"
+                                class="flex md:flex-col"
+                                data-event-category="Homepage"
+                                data-event-action="Latest stories"
+                                data-event-label="Get a lifetime of unlimited online privacy and security for just $28"
+                                data-event-non-interaction="false"
+                            ><div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none"><div class="o-media o-media--1:1 rounded-full md:o-media--16:9 md:rounded-none"><img
+                                            class="js-lazy"
+                                            data-src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2FTNW-KeepSolid-VPN.jpeg&amp;signature=97397c22e95590aab4ce3966125d8929"
+                                            alt="Get a lifetime of unlimited online privacy and security for just $28"><noscript><img
+                                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2FTNW-KeepSolid-VPN.jpeg&amp;signature=97397c22e95590aab4ce3966125d8929"
+                                                alt="Get a lifetime of unlimited online privacy and security for just $28"></noscript></div></div><div class="flex-1 md:mt-m"><h4 class="text-s leading-snug sm:text-m sm:leading-normal"><span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">
+                                            Get a lifetime of unlimited online privacy and security for just $28
+                                        </span></h4><p class="text-xs text-copy-light pt-xs md:text-s">
+                                        18 hours ago
+                                    </p></div></a></li><li class="o-grid__col md:o-grid__col--1/2 lg:o-grid__col--1/4"><a
+                                href="/news/harvard-galileo-project-aliens-what-to-know-syndication"
+                                class="flex md:flex-col"
+                                data-event-category="Homepage"
+                                data-event-action="Latest stories"
+                                data-event-label="Harvard? Galileo Project? ALIENS?!?! Here’s what you need to know"
+                                data-event-non-interaction="false"
+                            ><div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none"><div class="o-media o-media--1:1 rounded-full md:o-media--16:9 md:rounded-none"><img
+                                            class="js-lazy"
+                                            data-src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2FEso.jpg&amp;signature=631348fef7cfff6e168724a3aaa19a2b"
+                                            alt="Harvard? Galileo Project? ALIENS?!?! Here’s what you need to know"><noscript><img
+                                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2FEso.jpg&amp;signature=631348fef7cfff6e168724a3aaa19a2b"
+                                                alt="Harvard? Galileo Project? ALIENS?!?! Here’s what you need to know"></noscript></div></div><div class="flex-1 md:mt-m"><h4 class="text-s leading-snug sm:text-m sm:leading-normal"><span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">
+                                            Harvard? Galileo Project? ALIENS?!?! Here’s what you need to know
+                                        </span></h4><p class="text-xs text-copy-light pt-xs md:text-s">
+                                        18 hours ago
+                                    </p></div></a></li><li class="o-grid__col md:o-grid__col--1/2 lg:o-grid__col--1/4"><a
+                                href="/news/what-is-blackberry-tech-doing-evs-adas"
+                                class="flex md:flex-col"
+                                data-event-category="Homepage"
+                                data-event-action="Latest stories"
+                                data-event-label="What&amp;#8217;s BlackBerry tech doing in EVs?"
+                                data-event-non-interaction="false"
+                            ><div class="flex-basis-1/4 sm:flex-basis-1/4 mr-sm sm:mr-l md:m-none"><div class="o-media o-media--1:1 rounded-full md:o-media--16:9 md:rounded-none"><img
+                                            class="js-lazy"
+                                            data-src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2FUntitled-design-4-7.jpg&amp;signature=1ecfa29c2b809cdaf155c0d615dd9a9e"
+                                            alt="What&amp;#8217;s BlackBerry tech doing in EVs?"><noscript><img
+                                                src="https://img-cdn.tnwcdn.com/image?fit=285%2C150&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2021%2F07%2FUntitled-design-4-7.jpg&amp;signature=1ecfa29c2b809cdaf155c0d615dd9a9e"
+                                                alt="What&amp;#8217;s BlackBerry tech doing in EVs?"></noscript></div></div><div class="flex-1 md:mt-m"><h4 class="text-s leading-snug sm:text-m sm:leading-normal"><span class="transition duration-150 ease-out hover:shadow-0-2-0-brand-pink-25">
+                                            What&#8217;s BlackBerry tech doing in EVs?
+                                        </span></h4><p class="text-xs text-copy-light pt-xs md:text-s">
+                                        19 hours ago
+                                    </p></div></a></li></ul><div class="c-bodyNews__buttons mt-xxl md:justify-center md:mt-2xl"><a
+                        class="c-button c-button--next c-button--rounded"
+                        href="/latest"
+                        data-event-category="Homepage"
+                        data-event-action="See latest news button"
+                        data-event-label="See latest news - click"
+                        data-event-non-interaction="false"
+                    >
+                        ALL NEWS
+                    </a></div></div></section><section class="c-showcaseChannels  c-bodyBlock o-bodyBlock"><div class="o-wrapper o-wrapper--wide overflow-hidden" style="overflow: hidden;"><div class="c-bodyNews__header m-none"><h2 class="c-bodyNews__heading o-bodyBlock__heading">Explore our channels</h2></div><div class="c-scroller c-scroller--channels-explorer"><a
+                        href="/plugged"
+                        class="c-scroller__item"
+                    ><article
+                            class="c-showcaseChannel"
+                            style="background-image: url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&amp;url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-plugged.jpg&amp;signature=4423a77a45ff6281a089424a8dd0bc24)"
+                            data-event-category="Homepage"
+                            data-event-action="Explore our channels"
+                            data-event-label="/plugged"
+                            data-event-non-interaction="false"
+                        ><div class="c-showcaseChannel__logo"><img
+                                    class="js-lazy"
+                                    alt="plugged"
+                                    data-src="https://next.tnwcdn.com/assets/next/img/placeholder/media/plugged.svg"
+                                    data-event-category="Homepage"
+                                    data-event-action="Explore our channels"
+                                    data-event-label="/plugged"
+                                    data-event-non-interaction="false"><noscript><img
+                                        alt="plugged"
+                                        src="https://next.tnwcdn.com/assets/next/img/placeholder/media/plugged.svg"></noscript></div><h4 class="c-showcaseChannel__description"
+                                data-event-category="Homepage"
+                                data-event-action="Explore our channels"
+                                data-event-label="/plugged"
+                                data-event-non-interaction="false"
+                            >
+                                Your sardonic source for consumer tech stories
+                            </h4></article></a><a
+                        href="/neural"
+                        class="c-scroller__item"
+                    ><article
+                            class="c-showcaseChannel"
+                            style="background-image: url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&amp;url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-neural.jpg&amp;signature=7b20700b0f58af3860449664ae1a5e68)"
+                            data-event-category="Homepage"
+                            data-event-action="Explore our channels"
+                            data-event-label="/neural"
+                            data-event-non-interaction="false"
+                        ><div class="c-showcaseChannel__logo"><img
+                                    class="js-lazy"
+                                    alt="neural"
+                                    data-src="https://next.tnwcdn.com/assets/next/img/placeholder/media/neural.svg"
+                                    data-event-category="Homepage"
+                                    data-event-action="Explore our channels"
+                                    data-event-label="/neural"
+                                    data-event-non-interaction="false"><noscript><img
+                                        alt="neural"
+                                        src="https://next.tnwcdn.com/assets/next/img/placeholder/media/neural.svg"></noscript></div><h4 class="c-showcaseChannel__description"
+                                data-event-category="Homepage"
+                                data-event-action="Explore our channels"
+                                data-event-label="/neural"
+                                data-event-non-interaction="false"
+                            >
+                                Human-centric AI news and analysis
+                            </h4></article></a><a
+                        href="/shift"
+                        class="c-scroller__item"
+                    ><article
+                            class="c-showcaseChannel"
+                            style="background-image: url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&amp;url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-shift.jpg&amp;signature=1d3ef28f5220f870b7e289810caa80a3)"
+                            data-event-category="Homepage"
+                            data-event-action="Explore our channels"
+                            data-event-label="/shift"
+                            data-event-non-interaction="false"
+                        ><div class="c-showcaseChannel__logo"><img
+                                    class="js-lazy"
+                                    alt="shift"
+                                    data-src="https://next.tnwcdn.com/assets/next/img/placeholder/media/shift.svg"
+                                    data-event-category="Homepage"
+                                    data-event-action="Explore our channels"
+                                    data-event-label="/shift"
+                                    data-event-non-interaction="false"><noscript><img
+                                        alt="shift"
+                                        src="https://next.tnwcdn.com/assets/next/img/placeholder/media/shift.svg"></noscript></div><h4 class="c-showcaseChannel__description"
+                                data-event-category="Homepage"
+                                data-event-action="Explore our channels"
+                                data-event-label="/shift"
+                                data-event-non-interaction="false"
+                            >
+                                Driving the future of sustainable mobility
+                            </h4></article></a><a
+                        href="/growth-quarters"
+                        class="c-scroller__item"
+                    ><article
+                            class="c-showcaseChannel"
+                            style="background-image: url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&amp;url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-growth-quarters.jpg&amp;signature=72ccfd9e92f942be8ace3526d0dc3aab)"
+                            data-event-category="Homepage"
+                            data-event-action="Explore our channels"
+                            data-event-label="/growth-quarters"
+                            data-event-non-interaction="false"
+                        ><div class="c-showcaseChannel__logo"><img
+                                    class="js-lazy"
+                                    alt="growth-quarters"
+                                    data-src="https://next.tnwcdn.com/assets/next/img/placeholder/media/growth-quarters.svg"
+                                    data-event-category="Homepage"
+                                    data-event-action="Explore our channels"
+                                    data-event-label="/growth-quarters"
+                                    data-event-non-interaction="false"><noscript><img
+                                        alt="growth-quarters"
+                                        src="https://next.tnwcdn.com/assets/next/img/placeholder/media/growth-quarters.svg"></noscript></div><h4 class="c-showcaseChannel__description"
+                                data-event-category="Homepage"
+                                data-event-action="Explore our channels"
+                                data-event-label="/growth-quarters"
+                                data-event-non-interaction="false"
+                            >
+                                No-nonsense perspectives on startup growth
+                            </h4></article></a><a
+                        href="/hardfork"
+                        class="c-scroller__item"
+                    ><article
+                            class="c-showcaseChannel"
+                            style="background-image: url(https://img-cdn.tnwcdn.com/image?fit=260%2C235&amp;url=https%3A%2F%2Fnext.tnwcdn.com%2Fassets%2Fnext%2Fimg%2Fbackdrop-s-hardfork.jpg&amp;signature=77d9941cfc302cb2e25c39ab3043fa7b)"
+                            data-event-category="Homepage"
+                            data-event-action="Explore our channels"
+                            data-event-label="/hardfork"
+                            data-event-non-interaction="false"
+                        ><div class="c-showcaseChannel__logo"><img
+                                    class="js-lazy"
+                                    alt="hardfork"
+                                    data-src="https://next.tnwcdn.com/assets/next/img/placeholder/media/hardfork.svg"
+                                    data-event-category="Homepage"
+                                    data-event-action="Explore our channels"
+                                    data-event-label="/hardfork"
+                                    data-event-non-interaction="false"><noscript><img
+                                        alt="hardfork"
+                                        src="https://next.tnwcdn.com/assets/next/img/placeholder/media/hardfork.svg"></noscript></div><h4 class="c-showcaseChannel__description"
+                                data-event-category="Homepage"
+                                data-event-action="Explore our channels"
+                                data-event-label="/hardfork"
+                                data-event-non-interaction="false"
+                            >
+                                Inside money, markets, and Big Tech
+                            </h4></article></a></div></div></section><section class="c-divider-cta js-parallax c-bodyBlock next-newsletter-home" id="newslettersignup"><div class="c-announcement__message flex flex-col"><form action="" class="c-channel__ctaForm" data-ajax method="post"><input type="hidden" name="group" value="next" id="channelgroup"><h2 class="c-channel__ctaHeading">Get the snarkiest newsletter in tech</h2><p><p>Subscribe to our twice-weekly <a href="https://share.hsforms.com/1eT1w-z6ZSAiGIVEzvR5QMw47gef" target="_blank" rel="noreferrer noopener">Big Spam</a> or check out our <strong><a href="/newsletters">other newsletters.</a></strong></p></p><br><p class="c-channel-subscribe-success" id="quapla">Thank you! Be sure and check your inbox for all the latest from TNW.</p><div class="c-channel__ctaField" id="c-channel__ctaField"><input class="c-channel__ctaInput c-input c-input--borderless" name="email" placeholder="Email" type="email" id="channelSignUpEmail" data-event-category="Homepage" data-event-action="Newsletter" data-event-label="Email input - click" data-event-non-interaction="true" required><svg class="c-channel__ctaIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg><button class="c-channel__ctaSubmit" type="submit" data-event-category="Homepage" data-event-action="Newsletter" data-event-label="Email subscribe - click" data-event-non-interaction="false" id="channelFormSignUp">SUBSCRIBE</button></div></form></div><br><div class="socials-homepage" style="display: flex; flex-direction: column; align-items: center"><ul class="c-footer__contact"><li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-category="Homepage" data-event-action="Newsletter" data-event-label="Facebook"data-event-non-interaction="false" href="https://facebook.com/thenextweb" target="_blank" rel="noopener noreferrer"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg></a></li><li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-category="Homepage" data-event-action="Newsletter" data-event-label="Instagram"data-event-non-interaction="false" href="https://www.instagram.com/thenextweb/" target="_blank" rel="noopener noreferrer"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg></a></li><li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-category="Homepage" data-event-action="Newsletter" data-event-label="Twitter"data-event-non-interaction="false" href="https://twitter.com/thenextweb" target="_blank" rel="noopener noreferrer"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg></a></li><li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-category="Homepage" data-event-action="Newsletter" data-event-label="Youtube"data-event-non-interaction="false" href="https://youtube.com/user/thenextweb" target="_blank" rel="noopener noreferrer"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg></a></li><li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-category="Homepage" data-event-action="Newsletter" data-event-label="Flipboard"data-event-non-interaction="false" href="https://flipboard.com/@thenextweb" target="_blank" rel="noopener noreferrer"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg></a></li><li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-category="Homepage" data-event-action="Newsletter" data-event-label="Mail"data-event-non-interaction="false" href="/newsletters" target="_blank" rel="noopener noreferrer"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg></a></li><li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-category="Homepage" data-event-action="Newsletter" data-event-label="Linkedin"data-event-non-interaction="false" href="https://www.linkedin.com/company/the-next-web/" target="_blank" rel="noopener noreferrer"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg></a></li></ul></div></section><section class="c-showcase c-showcaseVideo  c-bodyBlock o-bodyBlock"><div class="o-wrapper"><h2 class="c-showcaseVideo__heading o-bodyBlock__heading">
+                    Watch what we made you
+                </h2><div class="c-showcaseVideo__container"><div class="c-showcaseVideo__mainStage"><div class="o-media o-media--16:9"><iframe id="c-videoStage" class="youtube-player" type="text/html" name="TNW Next Videostage" title="TNW Next Videostage"
+                            src="//youtube.com/embed/kIie5LVh7NE" frameborder="0"></iframe></div><header class="c-showcaseVideo__mainStageHeader"><div class="flex-grow"><h3 id="c-videoStageTitle" class="c-showcaseVideo__mainStageHeading">
+                                    What size iPad Pro should you buy?
+                                </h3><span id="c-videoStageDate" class="c-showcaseVideo__mainStageMeta">
+                                    Jul 26, 2021
+                                </span></div></header></div><div class="c-showcaseVideo__playlist"><div class="c-showcaseVideo__scroller"><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="What size iPad Pro should you buy?"
+                                data-src="//youtube.com/embed/kIie5LVh7NE"
+                                data-poster="https://i.ytimg.com/vi/kIie5LVh7NE/hqdefault.jpg"
+                                data-date="Jul 26, 2021"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/kIie5LVh7NE/hqdefault.jpg"
+                                        alt="What size iPad Pro should you buy?"><noscript><img
+                                            src="https://i.ytimg.com/vi/kIie5LVh7NE/hqdefault.jpg"
+                                            alt="What size iPad Pro should you buy?"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>What size iPad Pro should you buy?</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="Apple AirTags review: The Find My revolution"
+                                data-src="//youtube.com/embed/3Gpmto2eoro"
+                                data-poster="https://i.ytimg.com/vi/3Gpmto2eoro/hqdefault.jpg"
+                                data-date="Jun 11, 2021"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/3Gpmto2eoro/hqdefault.jpg"
+                                        alt="Apple AirTags review: The Find My revolution"><noscript><img
+                                            src="https://i.ytimg.com/vi/3Gpmto2eoro/hqdefault.jpg"
+                                            alt="Apple AirTags review: The Find My revolution"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>Apple AirTags review: The Find My revolution</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="Sonos Roam review: Smart speaker, smarter business"
+                                data-src="//youtube.com/embed/UAu4d0K99Vc"
+                                data-poster="https://i.ytimg.com/vi/UAu4d0K99Vc/hqdefault.jpg"
+                                data-date="May 6, 2021"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/UAu4d0K99Vc/hqdefault.jpg"
+                                        alt="Sonos Roam review: Smart speaker, smarter business"><noscript><img
+                                            src="https://i.ytimg.com/vi/UAu4d0K99Vc/hqdefault.jpg"
+                                            alt="Sonos Roam review: Smart speaker, smarter business"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>Sonos Roam review: Smart speaker, smarter business</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="Learning guitar is better than meditation"
+                                data-src="//youtube.com/embed/0OXyJygPSRI"
+                                data-poster="https://i.ytimg.com/vi/0OXyJygPSRI/hqdefault.jpg"
+                                data-date="Apr 14, 2021"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/0OXyJygPSRI/hqdefault.jpg"
+                                        alt="Learning guitar is better than meditation"><noscript><img
+                                            src="https://i.ytimg.com/vi/0OXyJygPSRI/hqdefault.jpg"
+                                            alt="Learning guitar is better than meditation"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>Learning guitar is better than meditation</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="Why your hi-fi setup needs these headphones"
+                                data-src="//youtube.com/embed/FAx1wjv2jEE"
+                                data-poster="https://i.ytimg.com/vi/FAx1wjv2jEE/hqdefault.jpg"
+                                data-date="Mar 19, 2021"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/FAx1wjv2jEE/hqdefault.jpg"
+                                        alt="Why your hi-fi setup needs these headphones"><noscript><img
+                                            src="https://i.ytimg.com/vi/FAx1wjv2jEE/hqdefault.jpg"
+                                            alt="Why your hi-fi setup needs these headphones"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>Why your hi-fi setup needs these headphones</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="CDs: Forgotten, but still amazing"
+                                data-src="//youtube.com/embed/jAIdYernX0w"
+                                data-poster="https://i.ytimg.com/vi/jAIdYernX0w/hqdefault.jpg"
+                                data-date="Mar 5, 2021"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/jAIdYernX0w/hqdefault.jpg"
+                                        alt="CDs: Forgotten, but still amazing"><noscript><img
+                                            src="https://i.ytimg.com/vi/jAIdYernX0w/hqdefault.jpg"
+                                            alt="CDs: Forgotten, but still amazing"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>CDs: Forgotten, but still amazing</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="The iPhone 11 Pro range: A retrospective on Apple’s best value phone"
+                                data-src="//youtube.com/embed/lRUewuKBzRg"
+                                data-poster="https://i.ytimg.com/vi/lRUewuKBzRg/hqdefault.jpg"
+                                data-date="Dec 3, 2020"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/lRUewuKBzRg/hqdefault.jpg"
+                                        alt="The iPhone 11 Pro range: A retrospective on Apple’s best value phone"><noscript><img
+                                            src="https://i.ytimg.com/vi/lRUewuKBzRg/hqdefault.jpg"
+                                            alt="The iPhone 11 Pro range: A retrospective on Apple’s best value phone"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>The iPhone 11 Pro range: A retrospective on Apple’s best value phone</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="4K Blu-ray players: stupid AND smart"
+                                data-src="//youtube.com/embed/l8HkCEHr-FQ"
+                                data-poster="https://i.ytimg.com/vi/l8HkCEHr-FQ/hqdefault.jpg"
+                                data-date="Aug 27, 2020"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/l8HkCEHr-FQ/hqdefault.jpg"
+                                        alt="4K Blu-ray players: stupid AND smart"><noscript><img
+                                            src="https://i.ytimg.com/vi/l8HkCEHr-FQ/hqdefault.jpg"
+                                            alt="4K Blu-ray players: stupid AND smart"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>4K Blu-ray players: stupid AND smart</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="Here’s what to expect from the iPhone 12"
+                                data-src="//youtube.com/embed/FoqkI_Y4CYU"
+                                data-poster="https://i.ytimg.com/vi/FoqkI_Y4CYU/hqdefault.jpg"
+                                data-date="May 4, 2020"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/FoqkI_Y4CYU/hqdefault.jpg"
+                                        alt="Here’s what to expect from the iPhone 12"><noscript><img
+                                            src="https://i.ytimg.com/vi/FoqkI_Y4CYU/hqdefault.jpg"
+                                            alt="Here’s what to expect from the iPhone 12"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>Here’s what to expect from the iPhone 12</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="VanMoof’s S3 is the e-bike we’d buy ourselves"
+                                data-src="//youtube.com/embed/HYXXMTZ__28"
+                                data-poster="https://i.ytimg.com/vi/HYXXMTZ__28/hqdefault.jpg"
+                                data-date="Apr 21, 2020"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/HYXXMTZ__28/hqdefault.jpg"
+                                        alt="VanMoof’s S3 is the e-bike we’d buy ourselves"><noscript><img
+                                            src="https://i.ytimg.com/vi/HYXXMTZ__28/hqdefault.jpg"
+                                            alt="VanMoof’s S3 is the e-bike we’d buy ourselves"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>VanMoof’s S3 is the e-bike we’d buy ourselves</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="Review: Analog Motion’s AM1 wants to be your first e-bike"
+                                data-src="//youtube.com/embed/S09JYinuBlg"
+                                data-poster="https://i.ytimg.com/vi/S09JYinuBlg/hqdefault.jpg"
+                                data-date="Mar 30, 2020"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/S09JYinuBlg/hqdefault.jpg"
+                                        alt="Review: Analog Motion’s AM1 wants to be your first e-bike"><noscript><img
+                                            src="https://i.ytimg.com/vi/S09JYinuBlg/hqdefault.jpg"
+                                            alt="Review: Analog Motion’s AM1 wants to be your first e-bike"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>Review: Analog Motion’s AM1 wants to be your first e-bike</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="The Pablo Escobar Fold 2 is just a… Samsung Galaxy Fold? (And a scam)"
+                                data-src="//youtube.com/embed/jb4Lo-y5HCw"
+                                data-poster="https://i.ytimg.com/vi/jb4Lo-y5HCw/hqdefault.jpg"
+                                data-date="Mar 11, 2020"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/jb4Lo-y5HCw/hqdefault.jpg"
+                                        alt="The Pablo Escobar Fold 2 is just a… Samsung Galaxy Fold? (And a scam)"><noscript><img
+                                            src="https://i.ytimg.com/vi/jb4Lo-y5HCw/hqdefault.jpg"
+                                            alt="The Pablo Escobar Fold 2 is just a… Samsung Galaxy Fold? (And a scam)"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>The Pablo Escobar Fold 2 is just a… Samsung Galaxy Fold? (And a scam)</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="This fancy digital art frame wants to fight your paintings"
+                                data-src="//youtube.com/embed/V1gO9rJAFUU"
+                                data-poster="https://i.ytimg.com/vi/V1gO9rJAFUU/hqdefault.jpg"
+                                data-date="Feb 28, 2020"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/V1gO9rJAFUU/hqdefault.jpg"
+                                        alt="This fancy digital art frame wants to fight your paintings"><noscript><img
+                                            src="https://i.ytimg.com/vi/V1gO9rJAFUU/hqdefault.jpg"
+                                            alt="This fancy digital art frame wants to fight your paintings"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>This fancy digital art frame wants to fight your paintings</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="We played 10-language ‘Telephone’ with this universal translator — and things got messy"
+                                data-src="//youtube.com/embed/Jma_qAt8B3A"
+                                data-poster="https://i.ytimg.com/vi/Jma_qAt8B3A/hqdefault.jpg"
+                                data-date="Feb 5, 2020"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/Jma_qAt8B3A/hqdefault.jpg"
+                                        alt="We played 10-language ‘Telephone’ with this universal translator — and things got messy"><noscript><img
+                                            src="https://i.ytimg.com/vi/Jma_qAt8B3A/hqdefault.jpg"
+                                            alt="We played 10-language ‘Telephone’ with this universal translator — and things got messy"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>We played 10-language ‘Telephone’ with this universal translator — and things got messy</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="We used brain-scanning headbands to have a meditation battle"
+                                data-src="//youtube.com/embed/lVtT2mh3FLM"
+                                data-poster="https://i.ytimg.com/vi/lVtT2mh3FLM/hqdefault.jpg"
+                                data-date="Mar 19, 2021"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/lVtT2mh3FLM/hqdefault.jpg"
+                                        alt="We used brain-scanning headbands to have a meditation battle"><noscript><img
+                                            src="https://i.ytimg.com/vi/lVtT2mh3FLM/hqdefault.jpg"
+                                            alt="We used brain-scanning headbands to have a meditation battle"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>We used brain-scanning headbands to have a meditation battle</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="We ordered fake $5 AirPods on Wish.com and it turns out they suck!"
+                                data-src="//youtube.com/embed/R8lwM_DJ-1U"
+                                data-poster="https://i.ytimg.com/vi/R8lwM_DJ-1U/hqdefault.jpg"
+                                data-date="Sep 4, 2019"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/R8lwM_DJ-1U/hqdefault.jpg"
+                                        alt="We ordered fake $5 AirPods on Wish.com and it turns out they suck!"><noscript><img
+                                            src="https://i.ytimg.com/vi/R8lwM_DJ-1U/hqdefault.jpg"
+                                            alt="We ordered fake $5 AirPods on Wish.com and it turns out they suck!"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>We ordered fake $5 AirPods on Wish.com and it turns out they suck!</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="We asked Sophia the robot humanity’s biggest questions"
+                                data-src="//youtube.com/embed/eTKOwOv4y54"
+                                data-poster="https://i.ytimg.com/vi/eTKOwOv4y54/hqdefault.jpg"
+                                data-date="Jan 10, 2019"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/eTKOwOv4y54/hqdefault.jpg"
+                                        alt="We asked Sophia the robot humanity’s biggest questions"><noscript><img
+                                            src="https://i.ytimg.com/vi/eTKOwOv4y54/hqdefault.jpg"
+                                            alt="We asked Sophia the robot humanity’s biggest questions"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>We asked Sophia the robot humanity’s biggest questions</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="We built our own Mario Kart"
+                                data-src="//youtube.com/embed/ocnEXfEJjcI"
+                                data-poster="https://i.ytimg.com/vi/ocnEXfEJjcI/hqdefault.jpg"
+                                data-date="Jan 9, 2019"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/ocnEXfEJjcI/hqdefault.jpg"
+                                        alt="We built our own Mario Kart"><noscript><img
+                                            src="https://i.ytimg.com/vi/ocnEXfEJjcI/hqdefault.jpg"
+                                            alt="We built our own Mario Kart"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>We built our own Mario Kart</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="FURBO: This dog camera is not just for dogs"
+                                data-src="//youtube.com/embed/BVqklztRUeE"
+                                data-poster="https://i.ytimg.com/vi/BVqklztRUeE/hqdefault.jpg"
+                                data-date="Jan 9, 2019"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/BVqklztRUeE/hqdefault.jpg"
+                                        alt="FURBO: This dog camera is not just for dogs"><noscript><img
+                                            src="https://i.ytimg.com/vi/BVqklztRUeE/hqdefault.jpg"
+                                            alt="FURBO: This dog camera is not just for dogs"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>FURBO: This dog camera is not just for dogs</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="The Hövding helmet protects your head… for a price"
+                                data-src="//youtube.com/embed/95_TNoFycng"
+                                data-poster="https://i.ytimg.com/vi/95_TNoFycng/hqdefault.jpg"
+                                data-date="Jan 9, 2019"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/95_TNoFycng/hqdefault.jpg"
+                                        alt="The Hövding helmet protects your head… for a price"><noscript><img
+                                            src="https://i.ytimg.com/vi/95_TNoFycng/hqdefault.jpg"
+                                            alt="The Hövding helmet protects your head… for a price"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>The Hövding helmet protects your head… for a price</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="Welcome to Plugged, TNW&#039;s new hardware publication"
+                                data-src="//youtube.com/embed/Zb7FR8Pn3BA"
+                                data-poster="https://i.ytimg.com/vi/Zb7FR8Pn3BA/hqdefault.jpg"
+                                data-date="Jan 9, 2019"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/Zb7FR8Pn3BA/hqdefault.jpg"
+                                        alt="Welcome to Plugged, TNW&#039;s new hardware publication"><noscript><img
+                                            src="https://i.ytimg.com/vi/Zb7FR8Pn3BA/hqdefault.jpg"
+                                            alt="Welcome to Plugged, TNW&#039;s new hardware publication"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>Welcome to Plugged, TNW&#039;s new hardware publication</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="We played a symphony on bluetooth speakers instead of reviewing them like normal people"
+                                data-src="//youtube.com/embed/RkAvTKUpjfw"
+                                data-poster="https://i.ytimg.com/vi/RkAvTKUpjfw/hqdefault.jpg"
+                                data-date="Jan 9, 2019"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/RkAvTKUpjfw/hqdefault.jpg"
+                                        alt="We played a symphony on bluetooth speakers instead of reviewing them like normal people"><noscript><img
+                                            src="https://i.ytimg.com/vi/RkAvTKUpjfw/hqdefault.jpg"
+                                            alt="We played a symphony on bluetooth speakers instead of reviewing them like normal people"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>We played a symphony on bluetooth speakers instead of reviewing them like normal people</span></div></a><a
+                                href="#"
+                                class="c-showcaseVideo__playlistItem"
+                                data-title="VanMoof’s new electric bike is brilliant but costly"
+                                data-src="//youtube.com/embed/eIFt0b3rpTk"
+                                data-poster="https://i.ytimg.com/vi/eIFt0b3rpTk/hqdefault.jpg"
+                                data-date="Jan 9, 2019"
+                            ><div class="o-media o-media--16:9"><img
+                                        class="js-lazy"
+                                        data-src="https://i.ytimg.com/vi/eIFt0b3rpTk/hqdefault.jpg"
+                                        alt="VanMoof’s new electric bike is brilliant but costly"><noscript><img
+                                            src="https://i.ytimg.com/vi/eIFt0b3rpTk/hqdefault.jpg"
+                                            alt="VanMoof’s new electric bike is brilliant but costly"></noscript><p class="c-showcaseVideo__playlistItemDuration"></p></div><div class="c-showcaseVideo__playlistItemTitle"><span>VanMoof’s new electric bike is brilliant but costly</span></div></a></div><div class="c-showcaseVideo__scrollerFade">
+                            &nbsp;
+                        </div></div></div></div></section><section class="c-showcase c-showcasePartner c-bodyBlock"><div class="o-wrapper"><div class="o-grid md:o-grid--gap-m lg:o-grid--gap-l"><div class="o-grid__col md:o-grid__col--1/2 mb-xl text-center md:mb-none md:text-left"><header class="md:c-sectionHeader--left mb-xl md:mb-none md:pr-l"><h6 class="c-bodyBlock__subheading">
+                                REACH YOUR GOALS
+                            </h6><h2 class="c-bodyNews__heading o-bodyBlock__heading" style="margin-bottom: 1rem !important;">
+                                Work with us
+                            </h2><p class="c-sectionHeader__intro mb-xl">
+                                TNW takes center stage in the tech industry, offering creative media campaigns, sizzling tech events, bespoke innovation programs, and prime office locations in Amsterdam. Want to engage your audience more effectively, innovate your business, and position your brand in front of a digital-savvy audience?
+                            </p><a 
+                                class="c-button c-button--primary hstrigger"
+                                data-event-category="Programs"
+                                data-event-action="CTA"
+                                data-event-label="TNW X Newsletter"
+                                href="#modal-newsletter-33478"
+                            >
+                                GET IN TOUCH
+                            </a></header></div><div class="o-grid__col md:o-grid__col--1/2 md:flex md:items-center"><div class="o-grid o-grid--gap-l o-grid--gap-xl"><div class="o-grid__col o-grid__col--1/2 flex flex-col lg:flex-row lg:items-center"><div class="mx-auto w-5xl md:w-6xl lg:m-none"><div class="o-media o-media--1:1"><img
+                                                class="js-lazy"
+                                                alt="Media"
+                                                data-src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/pillar-media.svg"><noscript><img
+                                                    alt="Media"
+                                                    src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/pillar-media.svg"></noscript></div></div><h4 class="mt-m text-center text-m lg:text-l lg:mt-none lg:ml-m">
+                                        Media
+                                    </h4></div><div class="o-grid__col o-grid__col--1/2 flex flex-col lg:flex-row lg:items-center"><div class="mx-auto w-5xl md:w-6xl lg:m-none"><div class="o-media o-media--1:1"><img
+                                                class="js-lazy"
+                                                alt="Events"
+                                                data-src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/companies/pillar-events.svg"><noscript><img
+                                                    alt="Events"
+                                                    src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/companies/pillar-events.svg"></noscript></div></div><h4 class="mt-m text-center text-m lg:text-l lg:mt-none lg:ml-m">
+                                        Events
+                                    </h4></div><div class="o-grid__col o-grid__col--1/2 flex flex-col lg:flex-row lg:items-center"><div class="mx-auto w-5xl md:w-6xl lg:m-none"><div class="o-media o-media--1:1"><img
+                                                class="js-lazy"
+                                                alt="Spaces"
+                                                data-src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/pillar-spaces.svg"><noscript><img
+                                                    alt="Spaces"
+                                                    src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/visuals/pillar-spaces.svg"></noscript></div></div><h4 class="mt-m text-center text-m lg:text-l lg:mt-none lg:ml-m">
+                                        Spaces
+                                    </h4></div><div class="o-grid__col o-grid__col--1/2 flex flex-col lg:flex-row lg:items-center"><div class="mx-auto w-5xl md:w-6xl lg:m-none"><div class="o-media o-media--1:1"><img
+                                                class="js-lazy"
+                                                alt="Programs"
+                                                data-src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/companies/pillar-programs.svg"><noscript><img
+                                                    alt="Programs"
+                                                    src="https://s3.amazonaws.com/events.tnw/hardfork-2018/uploads/companies/pillar-programs.svg"></noscript></div></div><h4 class="mt-m text-center text-m lg:text-l lg:mt-none lg:ml-m">
+                                        Programs
+                                    </h4></div></div></div></div><div class="o-wrapper mt-xl md:mt-3xl lg:mt-3xl lg:mb-xl"><ul class="o-grid o-grid--centered o-grid--gap-s justify-center"><li class="o-grid__col o-grid__col--1/2 md:o-grid__col--1/3 lg:o-grid__col--1/8"><a
+                                    class="c-showcasePartner__link o-media o-media--16:9"
+                                    href="https://www.google.com/"
+                                    data-event-category="TNW"
+                                    rel="nofollow noopener"
+                                    target="_blank"
+                                ><img
+                                        class="js-lazy"
+                                        alt="Google"
+                                        data-event-category="TNW"
+                                        data-event-action="Companies"
+                                        data-event-label="Google"
+                                        data-src="https://next.tnwcdn.com/assets/next/img/partners/google.svg"><noscript><img
+                                            alt="Google"
+                                            src="https://next.tnwcdn.com/assets/next/img/partners/google.svg"></noscript></a></li><li class="o-grid__col o-grid__col--1/2 md:o-grid__col--1/3 lg:o-grid__col--1/8"><a
+                                    class="c-showcasePartner__link o-media o-media--16:9"
+                                    href="https://www.etoro.com/"
+                                    data-event-category="TNW"
+                                    rel="nofollow noopener"
+                                    target="_blank"
+                                ><img
+                                        class="js-lazy"
+                                        alt="Etoro"
+                                        data-event-category="TNW"
+                                        data-event-action="Companies"
+                                        data-event-label="Etoro"
+                                        data-src="https://next.tnwcdn.com/assets/next/img/partners/etoro.svg"><noscript><img
+                                            alt="Etoro"
+                                            src="https://next.tnwcdn.com/assets/next/img/partners/etoro.svg"></noscript></a></li><li class="o-grid__col o-grid__col--1/2 md:o-grid__col--1/3 lg:o-grid__col--1/8"><a
+                                    class="c-showcasePartner__link o-media o-media--16:9"
+                                    href="https://www.ibm.com/"
+                                    data-event-category="TNW"
+                                    rel="nofollow noopener"
+                                    target="_blank"
+                                ><img
+                                        class="js-lazy"
+                                        alt="IBM"
+                                        data-event-category="TNW"
+                                        data-event-action="Companies"
+                                        data-event-label="IBM"
+                                        data-src="https://next.tnwcdn.com/assets/next/img/partners/ibm.svg"><noscript><img
+                                            alt="IBM"
+                                            src="https://next.tnwcdn.com/assets/next/img/partners/ibm.svg"></noscript></a></li><li class="o-grid__col o-grid__col--1/2 md:o-grid__col--1/3 lg:o-grid__col--1/8"><a
+                                    class="c-showcasePartner__link o-media o-media--16:9"
+                                    href="https://www.microsoft.com/"
+                                    data-event-category="TNW"
+                                    rel="nofollow noopener"
+                                    target="_blank"
+                                ><img
+                                        class="js-lazy"
+                                        alt="Microsoft"
+                                        data-event-category="TNW"
+                                        data-event-action="Companies"
+                                        data-event-label="Microsoft"
+                                        data-src="https://next.tnwcdn.com/assets/next/img/partners/microsoft.svg"><noscript><img
+                                            alt="Microsoft"
+                                            src="https://next.tnwcdn.com/assets/next/img/partners/microsoft.svg"></noscript></a></li><li class="o-grid__col o-grid__col--1/2 md:o-grid__col--1/3 lg:o-grid__col--1/8"><a
+                                    class="c-showcasePartner__link o-media o-media--16:9"
+                                    href="https://www.paypal.com/"
+                                    data-event-category="TNW"
+                                    rel="nofollow noopener"
+                                    target="_blank"
+                                ><img
+                                        class="js-lazy"
+                                        alt="PayPal"
+                                        data-event-category="TNW"
+                                        data-event-action="Companies"
+                                        data-event-label="PayPal"
+                                        data-src="https://next.tnwcdn.com/assets/next/img/partners/paypal.svg"><noscript><img
+                                            alt="PayPal"
+                                            src="https://next.tnwcdn.com/assets/next/img/partners/paypal.svg"></noscript></a></li><li class="o-grid__col o-grid__col--1/2 md:o-grid__col--1/3 lg:o-grid__col--1/8"><a
+                                    class="c-showcasePartner__link o-media o-media--16:9"
+                                    href="https://www.vodafone.com/"
+                                    data-event-category="TNW"
+                                    rel="nofollow noopener"
+                                    target="_blank"
+                                ><img
+                                        class="js-lazy"
+                                        alt="Vodafone"
+                                        data-event-category="TNW"
+                                        data-event-action="Companies"
+                                        data-event-label="Vodafone"
+                                        data-src="https://next.tnwcdn.com/assets/next/img/partners/vodafone.svg"><noscript><img
+                                            alt="Vodafone"
+                                            src="https://next.tnwcdn.com/assets/next/img/partners/vodafone.svg"></noscript></a></li><li class="o-grid__col o-grid__col--1/2 md:o-grid__col--1/3 lg:o-grid__col--1/8"><a
+                                    class="c-showcasePartner__link o-media o-media--16:9"
+                                    href="https://www.accenture.com/"
+                                    data-event-category="TNW"
+                                    rel="nofollow noopener"
+                                    target="_blank"
+                                ><img
+                                        class="js-lazy"
+                                        alt="Accenture"
+                                        data-event-category="TNW"
+                                        data-event-action="Companies"
+                                        data-event-label="Accenture"
+                                        data-src="https://next.tnwcdn.com/assets/next/img/partners/accenture.svg"><noscript><img
+                                            alt="Accenture"
+                                            src="https://next.tnwcdn.com/assets/next/img/partners/accenture.svg"></noscript></a></li><li class="o-grid__col o-grid__col--1/2 md:o-grid__col--1/3 lg:o-grid__col--1/8"><a
+                                    class="c-showcasePartner__link o-media o-media--16:9"
+                                    href="https://www.mckinsey.com/"
+                                    data-event-category="TNW"
+                                    rel="nofollow noopener"
+                                    target="_blank"
+                                ><img
+                                        class="js-lazy"
+                                        alt="McKinsey Company"
+                                        data-event-category="TNW"
+                                        data-event-action="Companies"
+                                        data-event-label="McKinsey Company"
+                                        data-src="https://next.tnwcdn.com/assets/next/img/partners/mckinsey-company.svg"><noscript><img
+                                            alt="McKinsey Company"
+                                            src="https://next.tnwcdn.com/assets/next/img/partners/mckinsey-company.svg"></noscript></a></li></ul></div></div></section></div><div
+    aria-modal="true"
+    class="c-modal c-modalSubscribe js-modal"
+    data-modal="newsletter-33478"
+    data-modal-step="1"
+    id="modalNewsletter--33478"
+    role="dialog"
+><div class="c-modal__window"><header class="c-modal__header"><h3 class="c-modal__title">WORK WITH US</h3><button class="c-modal__close js-modalClose" title="Close (Esc)"></button></header><div style="padding: 24px; overflow-y: scroll"><!--[if lte IE 8]><script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script><![endif]--><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script><script>
+  hbspt.forms.create({
+	region: "na1",
+	portalId: "7066311",
+	formId: "c0be02b0-34ee-4a02-a213-47e2b3f870e2"
+});
+</script></div></div></div><script>
+        var classListener = setInterval(function(){
+            if(document.body.classList.contains('is-canvas')){
+                document.getElementById('nextHome').classList.add('render-canvas');
+            };
+        }, 750);
+    </script></div></div><footer class="c-footer"><div class="o-wrapper"><div class="o-grid o-grid--gap-l"><div class="o-grid__col lg:o-grid__col--1/2"><div class="c-footer__logoContact"><div><a class="c-footer__logo" data-event-category="Footer" data-event-action="TNW Logo" data-event-label="Navigation" data-event-non-interaction="false" href="https://thenextweb.com/" title="TNW"><svg preserveAspectRatio="xMidYMid meet" viewbox="0 0 66 16"><path fill="#fff" d="M32.23993 5A6.00284 6.00284 0 0 1 34 9.24261V16h-6v-5.929a2.00249 2.00249 0 0 0-.58856-1.41424l-2.07239-2.07101A2.00315 2.00315 0 0 0 23.92346 6H22v10h-6V0h8.75189a6 6 0 0 1 4.24268 1.75739zM60 0v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 55.9234 10h-2.88214A5.99166 5.99166 0 0 0 54 6.75732V0h-6v5.929a2.00245 2.00245 0 0 1-.58856 1.41418l-2.07385 2.071A1.99969 1.99969 0 0 1 43.9234 10H42V0h-6v16h8.75189a6.003 6.003 0 0 0 4.244-1.75739L51 12.23938V16h5.75189a6.003 6.003 0 0 0 4.244-1.75739l3.244-3.24267A6.00264 6.00264 0 0 0 66 6.75732V0zM0 6h4v10h6V6h4V0H0z"></path></svg></a><p class="c-footer__tagline">The heart of tech</p></div><div><ul class="c-footer__contact"><li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-category="Footer" data-event-action="Socials" data-event-label="Faaaaebook" href="https://facebook.com/thenextweb" target="_blank" rel="noopener noreferrer" name="Facebook Contact Icon"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#facebook"></use></svg></a></li><li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-category="Footer" data-event-action="Socials" data-event-label="Instagram" href="https://www.instagram.com/thenextweb/" target="_blank" rel="noopener noreferrer" name="Instagram Contact Icon"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#instagram"></use></svg></a></li><li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-category="Footer" data-event-action="Socials" data-event-label="Twitter" href="https://twitter.com/thenextweb" target="_blank" rel="noopener noreferrer" name="Twitter Contact Icon"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#twitter"></use></svg></a></li><li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-category="Footer" data-event-action="Socials" data-event-label="Youtube" href="https://youtube.com/user/thenextweb" target="_blank" rel="noopener noreferrer" name="Youtube Contact Icon"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#youtube"></use></svg></a></li><li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-category="Footer" data-event-action="Socials" data-event-label="Flipboard" href="https://flipboard.com/@thenextweb" target="_blank" rel="noopener noreferrer" name="Flipboard Contact Icon"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#flipboard"></use></svg></a></li><li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-category="Footer" data-event-action="Socials" data-event-label="Mail" href="/newsletters" name="Email Footer Link"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#mail"></use></svg></a></li><li class="c-footer__contactItem"><a class="c-footer__contactLink" data-event-category="Footer" data-event-action="Socials" data-event-label="Linkedin" href="https://www.linkedin.com/company/the-next-web" target="_blank" rel="noopener noreferrer" name="LinkedIn Contact Icon"><svg class="c-footer__contactIcon"><use xlink:href="/assets/next/img/icons.svg#linkedin"></use></svg></a></li></ul></div></div></div><br><div class="o-grid__col--1/2 lg:o-grid__col--1/4 more"><h3 class="c-footer__heading">More TNW</h3><ul class="c-footer__menu"><li><a class="c-footer__menuLink" href="/latest" data-event-category="Footer" data-event-action="More TNW" data-event-label="Media" data-event-non-interaction="false">Media</a></li><li><a class="c-footer__menuLink" href="/events" data-event-category="Footer" data-event-action="More TNW" data-event-label="Events" data-event-non-interaction="false">Events</a></li><li><a class="c-footer__menuLink" href="/programs" data-event-category="Footer" data-event-action="More TNW" data-event-label="Programs" data-event-non-interaction="false">Programs</a></li><li><a class="c-footer__menuLink" href="/spaces" data-event-category="Footer" data-event-action="More TNW" data-event-label="Spaces" data-event-non-interaction="false">Spaces</a></li><li><a class="c-footer__menuLink" href="/newsletters" data-event-category="Footer" data-event-action="More TNW" data-event-label="Newsletters" data-event-non-interaction="false">Newsletters</a></li></ul></div><div class="o-grid__col--1/2 lg:o-grid__col--1/4 about"><h3 class="c-footer__heading">About TNW</h3><ul class="c-footer__menu"><li><a class="c-footer__menuLink" data-event-category="Footer" data-event-action="About TNW" data-event-label="mail" data-event-non-interaction="false" href="/cdn-cgi/l/email-protection#1a73747c755a6e746d347975" target="_blank" rel="noopener noreferrer">Contact Us</a></li><li><a class="c-footer__menuLink" data-event-category="Footer" data-event-action="About TNW" data-event-label="Partner with us" data-event-non-interaction="false" href="/conference/partners" name="Partner with us">Partner with us</a></li><li><a class="c-footer__menuLink" data-event-category="Footer" data-event-action="About TNW" data-event-label="Advertise" data-event-non-interaction="false" href="/advertise" name="Advertise">Advertise</a></li><li><a class="c-footer__menuLink" data-event-category="Footer" data-event-action="About TNW" data-event-label="Jobs" data-event-non-interaction="false" href="https://thenextweb.homerun.co/" target="_blank" rel="noopener noreferrer" name="Jobs">Jobs</a></li><li><a class="c-footer__menuLink" data-event-category="Footer" data-event-action="About TNW" data-event-label="Terms &amp; Conditions" data-event-non-interaction="false" href="/terms-and-conditions" name="Terms &amp; Conditions">Terms &amp; Conditions</a></li><li><a class="c-footer__menuLink" data-event-category="Footer" data-event-action="About TNW" data-event-label="Cookie Statement" data-event-non-interaction="false" href="/cookie-statement" name="Cookie Statement">Cookie Statement</a></li><li><a class="c-footer__menuLink" data-event-category="Footer" data-event-action="About TNW" data-event-label="Privacy Statement" data-event-non-interaction="false" href="/privacy-statement " name="Privacy Statement">Privacy Statement</a></li><li><a class="c-footer__menuLink" data-event-category="Footer" data-event-action="About TNW" data-event-label="Editorial Policy" data-event-non-interaction="false" href="https://ip-about-us.cdn.prismic.io/ip-about-us/51083d4d-d367-474c-9fb4-4edc135b70ea_25_january_2021_editorial_code_of_practice.pdf" target="_blank" rel="noopener noreferrer" name="Editorial Policy">Editorial Policy</a></li></ul></div></div></div><div class="c-footer__legal max-md:px-l"><p>
+                    TNW is a <span class="font-medium"><a href="https://www.ft.com/" data-event-category="Footer" data-event-action="Financial Times" data-event-label="Financial Times" data-event-non-interaction="false" target="_blank" rel="noopener nofollow" class="feedback">Financial Times</a></span> company.
+                </p><p>
+                    Copyright &copy; 2006&mdash;2021, The Next Web B.V.
+                    Made with &lt;3 in Amsterdam.
+                    <br></p></div></footer><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="//next.tnwcdn.com/assets/next/js/base.js?b961b1f9063778cba08629c3096be89b4f5c4fc7" async defer></script><script type="text/javascript">
+            window.csrfTokenName = "CRAFT_CSRF_TOKEN";
+            window.csrfTokenValue = "FkBz58MUXl5kz3GytraP83rTQqUUZCOYcQiP9_apZ_WWon5M5_H9vV93JYX0dhkKDpxFwP3y_7Ag4QXETScTrBQ9w6GP7gGiocFOGbjFi\u002Do\u003D";
+        </script><script>
+            var ENV = {
+                "paths": {
+                    "assets": "/assets"
+                }
+            };
+        </script><script>
+        var pageTitle = document.title;
+        var attentionMessage = `TNW | <3`;
+        window.onload = function() {
+        document.addEventListener('visibilitychange', function(e) {
+            var isPageActive = !document.hidden;
+                if(!isPageActive){
+                    document.title = attentionMessage;
+                } else {
+                    document.title = pageTitle;
+                }
+            });
+        };
+    </script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"676d1a503bc6f2c0","token":"7a7ada525cfc4c5cb0fb933997a11fa0","version":"2021.7.0","si":10}'></script>
+</body></html>
