@@ -9,6 +9,11 @@
     src:url("/fonts/Shentox\ Light.ttf");
 }
 
+@font-face {
+    font-family: "Graphik";
+    src: url("/fonts/GraphikRegular.otf");
+}
+
 /* ------MENU------ */
 .menu-wrap {
     display: flex;
@@ -20,6 +25,7 @@
     top: 0;
     right: 0;
     left: 0;
+    z-index: 1;
 }
 
 .menu {
@@ -43,8 +49,151 @@
     cursor: pointer;
 }
 
+/* -------- HEADER TITLE -------- */
+.page-header {
+    margin-top: 80px;
+    padding: 4% 6%;
+    display: flex;
+}
 
+.page-logo {
+    width: 80%;
+}
 
+.page-motto {
+    width: 20%;
+    font-family: "Graphik", sans-serif;
+    font-size: 28px;
+    letter-spacing: normal;
+    color: #505666;
+}
+
+.page-logo img:hover {
+    cursor: pointer;
+}
+
+/* ------- LATEST ARTICLES ------- */
+.latest-articles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "art1 art1 art2 art3"
+                         "art1 art1 gif gif"
+                         "advs advs gif gif";
+    grid-gap: 10px;
+    padding: 30px 20px;
+    
+}
+
+/*main article*/
+.art1 {
+    display: grid;
+    grid-area: art1;
+    width: auto;
+    height: 25em;
+    background-image: url("/img/art_backgrounds/facebook.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.art-description {
+    position: absolute;
+    bottom: 0;
+    margin-left: 20px;
+}
+
+.art-title {
+    font-family: "Shentox", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.96px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.art-description-main {
+    font-family: "Graphik", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* secondary articles*/
+.art2 {
+    display: grid;
+    grid-area: art2;
+    width: auto;
+    height: 15em;
+    background-image: url("/img/art_backgrounds/neural.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.art-description-secondary {
+    font-family: "Graphik", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;    
+}
+
+.art3 {
+    display: grid;
+    grid-area: art3;
+    width: auto;
+    height: 15em;
+    background-image: url("/img/art_backgrounds/cowboy.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+/*avertisment*/
+.advs {
+    display: grid;
+    grid-area: advs;
+    width: auto;
+    height: 12em;
+    background-image: url("/img/art_backgrounds/conference-banner.jpg");
+    text-align: center;
+    padding-top: 40px;
+}
+
+.advs-btn{
+    width: 133px;
+    height: 47px;
+    border: 1px solid white;
+    border-radius: 24px;
+    font-family: "Graphik", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background-color: transparent;
+    
+}
+
+/*gif*/
+.gif {
+    display: grid;
+    grid-area: gif;
+    width: auto;
+    background-image: url("/img/art_backgrounds/nothing-gif.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 280px;
+    padding-left: 4%;
+}
+
+.art1,
+.art2,
+.art3,
+.gif,
+.advs-btn:hover {
+    cursor: pointer;
+}
 
 
 
