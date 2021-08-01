@@ -310,6 +310,76 @@
     cursor: pointer;
 }
 
+/*------- NEWSLETTER ------*/
+.newsletter {
+    background-color: black;
+    background-image: url("/img/newsletter_background.webp");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: 100%; 
+}
+
+.newsletter-container {
+    text-align: center;
+    padding: 40px;
+}
+.newsletter-title {
+    font-family: "Avalon", sans-serif;
+    font-size: 42px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.newsletter-describe {
+    font-family: "Graphik", sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.newsletter-form {
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    max-width: 60%;
+    margin-left: 20%;
+}
+
+.form-icon {
+    padding: 10px;
+}
+
+.email {
+    width: 100%;
+    border-style: none;
+}
+
+.email:focus {
+    outline: none;
+}
+
+.form-btn {
+    border-style: none;
+    background-color: #fff;
+    font-family: "Graphik", sans-serif;
+    font-size: 14px;
+    color: #a7aab2;
+}
+
+.newsletter-social {
+    padding: 30px;
+}
+
+.social-icon {
+    width: 40px;
+    padding: 5px;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
   
 
 
