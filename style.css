@@ -14,6 +14,11 @@
     src: url("/fonts/GraphikRegular.otf");
 }
 
+@font-face {
+    font-family: "Trump Soft Pro";
+    src: url("/fonts/TrumpSoftPro.ttf");
+}
+
 /* ------MENU------ */
 .menu-wrap {
     display: flex;
@@ -195,5 +200,56 @@
     cursor: pointer;
 }
 
+/*--------------POPULAR ARTICLES*/
+.popular-articles {
+    background-color: #f7f8f8;
+}
+
+.pop-title {
+    padding-top: 30px;
+    text-align: center;
+    font-family: "Trump Soft Pro", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 0.32px;
+    color: #a7aab2;
+}
+
+.pop-art-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    padding: 30px 50px;
+    list-style-type: none;
+    counter-reset: my-counter;
+}
+
+.pop-art-wrapper li::before {
+    content: counter(my-counter); 
+    counter-increment: my-counter; 
+    font-family: "Trump Soft Pro", sans-serif;
+    font-size: 38px;
+    color: #cc0099;
+    padding-top: 0;
+  }
+
+  .pop-art-wrapper li {
+      display: flex;
+      align-items: flex-start;
+      padding-right: 25px;
+}
+
+  .pop-art-wrapper h4 {
+      margin-top: 5px;
+      padding-left: 10px;
+      font-family: "Graphik", sans-serif;
+      font-size: 16px;
+  }
+
+  .pop-art-wrapper h4:hover {
+      cursor: pointer;
+  }
+  
+  
 
 
