@@ -1,6 +1,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* ------FONTS----- */
@@ -30,7 +32,7 @@
     justify-content: space-between;
     background-color: #f7f8f8;
     align-items: center;
-    padding: 5px 15px;
+    padding: 10px 15px;
     position: fixed;
     top: 0;
     right: 0;
@@ -208,7 +210,7 @@
 /*--------------POPULAR ARTICLES--------------*/
 .popular-articles {
     background-color: #f7f8f8;
-    padding: 40px;
+    padding: 50px 40px;
 }
 
 .pop-title {
@@ -218,7 +220,7 @@
     font-weight: bold;
     font-size: 32px;
     letter-spacing: 0.32px;
-    color: #a7aab2;
+    color: #c3c5ca;
 }
 
 .pop-art-wrapper {
@@ -258,7 +260,7 @@
 
 /*-----------LATEST STORIES------------------*/
 .latest-stories {
-    padding: 70px 50px;
+    padding: 8em 4em;
 }
 
 .lat-stor-title {
@@ -268,7 +270,7 @@
 }
 
 .lat-stor-articles {
-    flex-basis: 20%;
+    flex-basis: 25%;
     padding: 10px;
 }
 
@@ -317,7 +319,8 @@
     background-image: url("/img/newsletter_background.webp");
     background-size: 100%;
     background-attachment: fixed;
-    background-position: 100%; 
+    background-position: 100%;
+    
 }
 
 .newsletter-container {
@@ -345,6 +348,7 @@
     height: 40px;
     max-width: 60%;
     margin-left: 20%;
+    margin-top: 2em;
 }
 
 .form-icon {
@@ -366,6 +370,7 @@
     font-family: "Graphik", sans-serif;
     font-size: 14px;
     color: #a7aab2;
+    padding: 0.5em;
 }
 
 .form-btn:hover {
@@ -388,7 +393,7 @@
 
 /* --------- REACH YOUR GOALS --------*/
 .reach-goals {
-    padding: 90px 40px 50px 100px;
+    padding: 90px 40px 0 100px;
 }
 .reach-container {
     display: flex;
@@ -467,6 +472,84 @@
 .partner-icon {
     flex-basis: 12.5%;
     max-width: 12.5%;
+}
+
+.partner-icon:hover {
+    cursor: pointer;
+}
+
+/*------ FOOTER -----*/
+.footer-wrapper {
+    margin-bottom: 0;
+    background-color: black;
+    color: #fff;
+}
+
+.top-footer {
+    display: flex;
+    padding: 3em 2em 1em 8em;
+    border-bottom: 1px solid #a7aab2;
+}
+
+.footer-logo-wrapper {
+    flex-basis: 50%;
+    position: relative;
+}
+
+.footer-moto {
+    font-family: "Graphik", sans-serif;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.footer-icons-wrapper {
+    position: absolute;
+    bottom: 20px;
+}
+
+.footer-more {
+    flex-basis: 25%;
+}
+
+.footer-more h3 {
+    font-family: "Graphik", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 1rem 0;    
+}
+
+.more-title {
+    font-family: "Graphik", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.more-title li {
+    font-family: "Graphik", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #00cccc;
+    list-style: none;
+    list-style-position: outside;
+    padding: 0;
+    margin: 0;
+}
+
+.more-title li:hover {
+    cursor: pointer;
+}
+
+.bottom-footer {
+    padding: 3em;
+    font-family: "Graphik", sans-serif;
+    font-size: 14px;
+    color: #a7aab2;
+    text-align: center;
 }
   
 
