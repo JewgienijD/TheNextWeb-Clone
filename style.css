@@ -457,7 +457,7 @@ html, body {
 /*------- NEWSLETTER ------*/
 .newsletter {
     background-color: black;
-    background-image: url("/img/newsletter_background.webp");
+    background-image: url("./img/newsletter_background.webp");
     background-size: 100%;
     background-attachment: fixed;
     background-position: 100%;
