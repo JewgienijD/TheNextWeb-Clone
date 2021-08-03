@@ -12,22 +12,22 @@ html, body {
 /* ------FONTS----- */
 @font-face {
     font-family: "Shentox";
-    src:url("/fonts/Shentox\ Light.ttf");
+    src:url("./fonts/Shentox\ Light.ttf");
 }
 
 @font-face {
     font-family: "Graphik";
-    src: url("/fonts/GraphikRegular.otf");
+    src: url("./fonts/GraphikRegular.otf");
 }
 
 @font-face {
     font-family: "Trump Soft Pro";
-    src: url("/fonts/TrumpSoftPro.ttf");
+    src: url("./fonts/TrumpSoftPro.ttf");
 }
 
 @font-face {
     font-family: "Avalon";
-    src: url("/fonts/Avalon.ttf");
+    src: url("./fonts/Avalon.ttf");
 }
 
 /* ------MENU------ */
