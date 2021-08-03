@@ -12,22 +12,22 @@ html, body {
 /* ------FONTS----- */
 @font-face {
     font-family: "Shentox";
-    src:url("/fonts/Shentox\ Light.ttf");
+    src:url("./fonts/Shentox\ Light.ttf");
 }
 
 @font-face {
     font-family: "Graphik";
-    src: url("/fonts/GraphikRegular.otf");
+    src: url("./fonts/GraphikRegular.otf");
 }
 
 @font-face {
     font-family: "Trump Soft Pro";
-    src: url("/fonts/TrumpSoftPro.ttf");
+    src: url("./fonts/TrumpSoftPro.ttf");
 }
 
 @font-face {
     font-family: "Avalon";
-    src: url("/fonts/Avalon.ttf");
+    src: url("./fonts/Avalon.ttf");
 }
 
 /* ------MENU------ */
@@ -229,7 +229,7 @@ html, body {
     grid-area: art1;
     width: auto;
     height: 25em;
-    background-image: url("/img/art_backgrounds/facebook.jpg");
+    background-image: url("./img/art_backgrounds/facebook.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -265,7 +265,7 @@ html, body {
     grid-area: art2;
     width: auto;
     height: 15em;
-    background-image: url("/img/art_backgrounds/neural.jpg");
+    background-image: url("./img/art_backgrounds/neural.jpg");
     background-size: 100% 100%;
     position: relative;
 }
@@ -284,7 +284,7 @@ html, body {
     grid-area: art3;
     width: auto;
     height: 15em;
-    background-image: url("/img/art_backgrounds/cowboy.jpg");
+    background-image: url("./img/art_backgrounds/cowboy.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -296,7 +296,7 @@ html, body {
     grid-area: advs;
     width: auto;
     height: 12em;
-    background-image: url("/img/art_backgrounds/conference-banner.jpg");
+    background-image: url("./img/art_backgrounds/conference-banner.jpg");
     text-align: center;
     padding-top: 40px;
 }
@@ -318,7 +318,7 @@ html, body {
     display: grid;
     grid-area: gif;
     width: auto;
-    background-image: url("/img/art_backgrounds/nothing-gif.gif");
+    background-image: url("./img/art_backgrounds/nothing-gif.gif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     padding-top: 280px;
@@ -524,7 +524,7 @@ html, body {
 /*------- NEWSLETTER ------*/
 .newsletter {
     background-color: black;
-    background-image: url("/img/newsletter_background.webp");
+    background-image: url("./img/newsletter_background.webp");
     background-size: 100%;
     background-attachment: fixed;
     background-position: 100%;
